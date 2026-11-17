@@ -10,5 +10,19 @@
     "image_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-17-california-sues-openai.jpg",
     "posted_at": "2026-11-17T12:34:34+00:00",
     "webhook_status": 200
+  },
+  {
+    "id": "2026-11-17-us-ai-chip-remote-access-rule",
+    "story_key": "us-ai-chip-remote-access-rule",
+    "headline": "آمریکا راه دسترسی از راه دور چین به تراشه‌های هوش مصنوعی را می‌بندد",
+    "source_urls": [
+      "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/",
+      "https://www.bloomberg.com/news/articles/2026-11-16/us-moves-to-limit-remote-access-to-advanced-ai-chips",
+      "https://www.axios.com/2026/11/16/trump-admin-moves-to-close-china-ai-chip-loophole"
+    ],
+    "image_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-17-us-ai-chip-remote-access-rule.jpg",
+    "image_mode": "ai",
+    "posted_at": "2026-11-17T13:00:09+00:00",
+    "webhook_status": 200
   }
 ]
