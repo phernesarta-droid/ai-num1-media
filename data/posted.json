@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": "2026-11-17-california-sues-openai",
+    "story_key": "california-v-openai-lawsuit",
+    "headline": "کالیفرنیا از OpenAI شکایت کرد؛ اتهام: از دست رفتن کنترل ایجنت‌های هوش مصنوعی",
+    "source_urls": [
+      "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
+      "https://calmatters.org/economy/technology/2026/11/california-is-suing-openai-over-hugging-face-hack/"
+    ],
+    "image_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-17-california-sues-openai.jpg",
+    "posted_at": "2026-11-17T12:34:34+00:00",
+    "webhook_status": 200
+  }
+]
