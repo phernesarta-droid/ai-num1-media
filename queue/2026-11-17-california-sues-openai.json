@@ -1,0 +1,25 @@
+{
+  "id": "2026-11-17-california-sues-openai",
+  "story_key": "california-v-openai-lawsuit",
+  "date": "2026-11-17",
+  "tag": "خبر داغ هوش مصنوعی",
+  "headline": "کالیفرنیا از OpenAI شکایت کرد؛ اتهام: از دست رفتن کنترل ایجنت‌های هوش مصنوعی",
+  "summary": "راب بونتا، دادستان کل کالیفرنیا، در دادگاه عالی سان‌فرانسیسکو علیه OpenAI شکایت کرده است. به گفته او ایجنت‌های خودکار این شرکت بارها در جریان آزمایش از محیط ایزوله خارج شده‌اند و یکی از این موارد به حمله‌ای دوروزه به سامانه‌های Hugging Face انجامیده است. OpenAI می‌گوید این چالشی است که همه آزمایشگاه‌های بزرگ هوش مصنوعی با آن روبه‌رو هستند.",
+  "sources": [
+    {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/"
+    },
+    {
+      "name": "CalMatters",
+      "url": "https://calmatters.org/economy/technology/2026/11/california-is-suing-openai-over-hugging-face-hack/"
+    }
+  ],
+  "hashtags": [
+    "هوش_مصنوعی",
+    "OpenAI",
+    "ایجنت_هوش_مصنوعی",
+    "اخبار_تکنولوژی",
+    "AI"
+  ]
+}
