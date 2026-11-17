@@ -1,0 +1,32 @@
+{
+  "id": "2026-11-17-us-ai-chip-remote-access-rule",
+  "story_key": "us-ai-chip-remote-access-rule",
+  "date": "2026-11-17",
+  "tag": "قانون‌گذاری",
+  "headline": "آمریکا راه دسترسی از راه دور چین به تراشه‌های هوش مصنوعی را می‌بندد",
+  "hook": "دور زدن تحریم تراشه‌ها با اجارهٔ قدرت پردازشی در کشورهای ثالث حالا بسیار سخت‌تر شده است.",
+  "summary": "وزارت بازرگانی آمریکا روز ۱۶ نوامبر قانون تازه‌ای منتشر کرد که صادرات تراشه‌ها و سرورهای پیشرفتهٔ هوش مصنوعی به مراکز داده‌ای را که ممکن است به شرکت‌های چینی قدرت پردازشی بدهند، مشروط به مجوز می‌کند. ارسال این تراشه‌ها به مالزی، سنگاپور، اندونزی، تایلند و برزیل هم حالا مجوز می‌خواهد. هدف، بستن راهی است که از طریق آن محدودیت‌های صادراتی با پردازش ابری دور زده می‌شد.",
+  "question": "به نظر شما این محدودیت‌ها پیشرفت هوش مصنوعی چین را کند می‌کند یا آن را به ساخت تراشهٔ بومی سرعت می‌دهد؟",
+  "image_prompt": "Aerial night view of a glowing abstract landscape of geometric light towers resembling a circuit board, a vast translucent dome of cyan light covering it, thin beams of violet light from far away bending away from the dome, conceptual metaphor for guarded computing power",
+  "sources": [
+    {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/"
+    },
+    {
+      "name": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-16/us-moves-to-limit-remote-access-to-advanced-ai-chips"
+    },
+    {
+      "name": "Axios",
+      "url": "https://www.axios.com/2026/11/16/trump-admin-moves-to-close-china-ai-chip-loophole"
+    }
+  ],
+  "hashtags": [
+    "هوش_مصنوعی",
+    "تراشه_هوش_مصنوعی",
+    "کنترل_صادرات",
+    "مرکز_داده",
+    "AIChips"
+  ]
+}
