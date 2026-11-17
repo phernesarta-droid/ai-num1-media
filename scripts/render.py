@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
-"""Fixed news-card template for @ai_num1 (1080x1350 JPEG, Vazirmatn).
+"""News-card templates for @ai_num1 (1080x1350 JPEG, Vazirmatn).
+
+render()     classic card: gradient background, headline + summary + sources (fallback template).
+render_ai()  concept card: full-bleed AI background image with the Persian headline overlaid.
 
 Usage:
-    python3 scripts/render.py post.json out.jpg
+    python3 scripts/render.py post.json out.jpg [background.jpg]
 
 post.json fields used: headline, summary, sources (list of {name, url}), date (YYYY-MM-DD), tag (optional).
 """
@@ -200,6 +203,107 @@ def render(post, out_path):
     return out_path
 
 
+def cover(bg, w, h):
+    """Scale + center-crop an image to exactly w x h."""
+    scale = max(w / bg.width, h / bg.height)
+    bg = bg.resize((round(bg.width * scale), round(bg.height * scale)), Image.LANCZOS)
+    left, top = (bg.width - w) // 2, (bg.height - h) // 2
+    return bg.crop((left, top, left + w, top + h))
+
+
+def shade(img, stops):
+    """Vertical dark overlay; stops = [(y_fraction, alpha 0-255), ...] linearly interpolated."""
+    col = Image.new("L", (1, H))
+    for y in range(H):
+        t = y / (H - 1)
+        for (t0, a0), (t1, a1) in zip(stops, stops[1:]):
+            if t0 <= t <= t1:
+                col.putpixel((0, y), int(a0 + (a1 - a0) * (t - t0) / max(t1 - t0, 1e-6)))
+                break
+    mask = col.resize((W, H))
+    dark = Image.new("RGB", (W, H), (6, 8, 22))
+    return Image.composite(dark, img, mask)
+
+
+def text_shadow(img, draw_fn, radius=10, opacity=200):
+    """Draw text via draw_fn(draw, fill) twice: a blurred dark shadow, then the real text."""
+    layer = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    draw_fn(ImageDraw.Draw(layer), (0, 0, 0, opacity))
+    layer = layer.filter(ImageFilter.GaussianBlur(radius))
+    img = Image.alpha_composite(img.convert("RGBA"), layer)
+    draw_fn(ImageDraw.Draw(img), None)
+    return img.convert("RGB")
+
+
+def render_ai(post, bg_path, out_path):
+    img = cover(Image.open(bg_path).convert("RGB"), W, H)
+    img = shade(img, [(0.0, 150), (0.16, 40), (0.36, 0), (0.50, 120), (0.66, 225), (1.0, 245)])
+    d = ImageDraw.Draw(img)
+    right = W - MARGIN
+    content_w = W - 2 * MARGIN
+
+    # --- header: brand (left) + tag pill (right)
+    d.text((MARGIN, 78), "@ai_num1", font=font("Black", 40), fill=WHITE)
+    d.rectangle((MARGIN, 136, MARGIN + 70, 142), fill=ACCENT)
+    tag = post.get("tag") or "خبر داغ هوش مصنوعی"
+    tf = font("Bold", 30)
+    t_w = tw(d, tag, tf)
+    pad = 26
+    d.rounded_rectangle((right - t_w - 2 * pad, 76, right, 136), radius=30, fill=ACCENT)
+    draw_rtl(d, right - pad, 84, tag, tf, BG_TOP)
+
+    # --- bottom block, laid out upward from the footer
+    footer_y = H - 84
+    src_y = footer_y - 78
+    hf, hlines, hsize = fit_block(d, post["headline"], "Black", [76, 70, 64, 60, 56, 52], content_w, 4)
+    lh = int(hsize * 1.5)
+    head_bottom = src_y - 54
+    head_top = head_bottom - lh * len(hlines)
+    date_y = head_top - 104
+    bar_y = date_y - 34
+
+    d.rounded_rectangle((right - 160, bar_y, right, bar_y + 10), radius=5, fill=ACCENT)
+    d.rounded_rectangle((right - 230, bar_y, right - 175, bar_y + 10), radius=5, fill=ACCENT2)
+    draw_rtl(d, right, date_y, jalali_label(post["date"]), font("Medium", 30), MUTED)
+
+    def headline(draw, fill):
+        y = head_top
+        for line in hlines:
+            draw_rtl(draw, right, y, line, hf, fill or WHITE)
+            y += lh
+    img = text_shadow(img, headline)
+    d = ImageDraw.Draw(img)
+
+    # --- source line
+    lf = font("Bold", 28)
+    lw = draw_rtl(d, right, src_y, "منبع:", lf, ACCENT)
+    names = "  ·  ".join(s["name"] for s in post["sources"])
+    latin = all(s["name"].isascii() for s in post["sources"])
+    nf = font("Medium", 28)
+    max_w = content_w - lw - 16
+    measure = (lambda f: d.textlength(names, font=f)) if latin else (lambda f: tw(d, names, f))
+    while measure(nf) > max_w and nf.size > 20:
+        nf = font("Medium", nf.size - 2)
+    nx = right - lw - 16
+    if latin:
+        d.text((nx - measure(nf), src_y + (28 - nf.size) // 2), names, font=nf, fill=WHITE)
+    else:
+        draw_rtl(d, nx, src_y + (28 - nf.size) // 2, names, nf, WHITE)
+
+    # --- footer
+    d.line((MARGIN, footer_y - 26, right, footer_y - 26), fill=(80, 90, 140), width=1)
+    draw_rtl(d, right, footer_y, "هر روز، مهم‌ترین خبرهای هوش مصنوعی", font("Medium", 26), MUTED)
+    d.text((MARGIN, footer_y), "AI NUM1", font=font("Black", 26), fill=ACCENT)
+
+    out_path = Path(out_path)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    img.save(out_path, "JPEG", quality=92, optimize=True, progressive=True)
+    return out_path
+
+
 if __name__ == "__main__":
     post = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))
-    print(render(post, sys.argv[2]))
+    if len(sys.argv) > 3:
+        print(render_ai(post, sys.argv[3], sys.argv[2]))
+    else:
+        print(render(post, sys.argv[2]))

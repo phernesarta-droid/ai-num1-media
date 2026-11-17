@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Publish one queued news post to Instagram @ai_num1 via the Make webhook.
 
-Steps: duplicate check -> render JPEG -> commit & push to main (GitHub Pages)
+Steps: duplicate check -> validate caption fields -> FLUX concept background (Cloudflare Workers AI)
+       -> render JPEG (falls back to the classic template if image generation fails)
+       -> commit & push to main (GitHub Pages)
        -> wait until the image is live -> POST {image_url, caption} to MAKE_WEBHOOK_URL
        -> record in data/posted.json and push.
 
@@ -9,6 +11,8 @@ Usage:
     python3 scripts/publish.py queue/<id>.json            # full publish
     python3 scripts/publish.py queue/<id>.json --dry-run  # render + caption only, no push/post
     python3 scripts/publish.py --check queue/<id>.json    # only run the duplicate check
+    --regen-bg   discard the cached background and generate a new one
+    --no-ai      force the classic template (no image generation)
 """
 import argparse
 import datetime as dt
@@ -23,12 +27,15 @@ import urllib.request
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from render import render  # noqa: E402
+from imagegen import ImageGenError, check_prompt, generate  # noqa: E402
+from render import render, render_ai  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 PAGES_BASE = "https://phernesarta-droid.github.io/ai-num1-media/"
 HISTORY = ROOT / "data" / "posted.json"
 PAGES_BRANCH = "main"
+BG_CACHE = ROOT / "cache" / "bg"   # git-ignored; keeps the reviewed background between dry-run and publish
+MAX_HASHTAGS = 5
 
 
 def load_history():
@@ -66,20 +73,75 @@ def find_duplicate(post, history):
     return None, None
 
 
+def clean_tags(tags):
+    out, seen = [], set()
+    for t in tags:
+        t = t.strip().lstrip("#").replace(" ", "_")
+        if t and t.lower() not in seen:
+            seen.add(t.lower())
+            out.append(t)
+    return out
+
+
+def validate(post):
+    """Caption rules: hook first, question last, 1-5 specific hashtags, an image_prompt."""
+    errors = []
+    hook = (post.get("hook") or "").strip()
+    if not hook:
+        errors.append("missing field: hook (one-sentence opener)")
+    elif "\n" in hook or len(hook) > 150 or len(re.findall(r"[.!?؟…]\s+\S", hook)) > 0:
+        errors.append("hook must be a single sentence, at most 150 characters")
+    q = (post.get("question") or "").strip()
+    if not q:
+        errors.append("missing field: question (closing question for comments)")
+    elif not q.endswith(("؟", "?")) or "\n" in q or len(q) > 150:
+        errors.append("question must be one line, at most 150 characters, ending in ؟")
+    tags = clean_tags(post.get("hashtags") or [])
+    if not 1 <= len(tags) <= MAX_HASHTAGS:
+        errors.append(f"hashtags: need 1-{MAX_HASHTAGS} unique tags, got {len(tags)}")
+    if not (post.get("image_prompt") or "").strip():
+        errors.append("missing field: image_prompt (English concept description)")
+    else:
+        bad = check_prompt(post["image_prompt"])
+        if bad:
+            errors.append(f"image_prompt must not name companies/products/people: {', '.join(bad)}")
+    return errors
+
+
 def build_caption(post):
-    parts = [post["headline"], "", post["summary"], ""]
+    parts = [post["hook"].strip(), "", post["summary"], ""]
     if post.get("caption_extra"):
         parts += [post["caption_extra"], ""]
     parts.append("🔗 منبع:")
     for s in post["sources"]:
         parts.append(f"• {s['name']}: {s['url']}")
-    parts += ["", "📌 برای خبرهای روزانه و معتبر هوش مصنوعی، @ai_num1 را دنبال کنید."]
-    tags = post.get("hashtags") or ["هوش_مصنوعی", "AI"]
-    parts += ["", " ".join("#" + t.lstrip("#").replace(" ", "_") for t in tags)]
+    parts += ["", "📌 خبرهای روزانه و معتبر هوش مصنوعی در @ai_num1"]
+    parts += ["", "💬 " + post["question"].strip()]
+    parts += ["", " ".join("#" + t for t in clean_tags(post["hashtags"]))]
     caption = "\n".join(parts)
     if len(caption) > 2200:
         raise ValueError(f"Caption too long ({len(caption)} > 2200)")
     return caption
+
+
+def make_image(post, out, regen=False, no_ai=False):
+    """Render with a FLUX background; on any image-generation failure use the classic template."""
+    if no_ai:
+        render(post, out)
+        return "classic", None
+    bg = BG_CACHE / f"{post['id']}.jpg"
+    meta_file = bg.with_suffix(".json")
+    cached = bg.exists() and meta_file.exists() and not regen and \
+        json.loads(meta_file.read_text(encoding="utf-8")).get("prompt") == post["image_prompt"]
+    try:
+        if not cached:
+            generate(post["image_prompt"], bg)
+        render_ai(post, bg, out)
+        return "ai", json.loads(meta_file.read_text(encoding="utf-8"))
+    except (ImageGenError, OSError, ValueError) as e:
+        print(f"WARNING: AI image failed ({e}); falling back to classic template", file=sys.stderr)
+        render(post, out)
+        return "classic", {"error": str(e)[:300]}
 
 
 def git(*args, check=True):
@@ -133,6 +195,8 @@ def main():
     ap.add_argument("post")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--check", action="store_true")
+    ap.add_argument("--regen-bg", action="store_true")
+    ap.add_argument("--no-ai", action="store_true")
     a = ap.parse_args()
 
     post_path = Path(a.post)
@@ -152,10 +216,15 @@ def main():
         print("OK: not a duplicate")
         return
 
+    errors = validate(post)
+    if errors:
+        sys.exit("invalid post:\n  - " + "\n  - ".join(errors))
+
     y, m = post["date"][:4], post["date"][5:7]
     rel = Path("posts") / y / m / f"{post['id']}.jpg"
-    render(post, ROOT / rel)
+    image_mode, bg_meta = make_image(post, ROOT / rel, regen=a.regen_bg, no_ai=a.no_ai)
     caption = build_caption(post)
+    print("mode: ", image_mode, bg_meta or "")
     image_url = PAGES_BASE + rel.as_posix()
     print("image:", ROOT / rel)
     print("url:  ", image_url)
@@ -177,6 +246,7 @@ def main():
         "headline": post["headline"],
         "source_urls": [s["url"] for s in post["sources"]],
         "image_url": image_url,
+        "image_mode": image_mode,
         "posted_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
         "webhook_status": status,
     })
