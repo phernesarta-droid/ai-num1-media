@@ -24,5 +24,19 @@
     "image_mode": "ai",
     "posted_at": "2026-11-17T13:00:09+00:00",
     "webhook_status": 200
+  },
+  {
+    "id": "2026-11-19-anthropic-ipo-priced",
+    "story_key": "anthropic-ipo-pricing",
+    "headline": "قیمت عرضهٔ اولیهٔ Anthropic ۸۳ دلار شد؛ بزرگ‌ترین IPO تاریخ با ۸۱ میلیارد دلار",
+    "source_urls": [
+      "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html",
+      "https://www.axios.com/2026/11/18/anthropic-ipo-1-trillion"
+    ],
+    "image_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-19-anthropic-ipo-priced.jpg",
+    "image_mode": "ai",
+    "posted_at": "2026-11-19T10:55:17+00:00",
+    "webhook_status": 200
   }
 ]
