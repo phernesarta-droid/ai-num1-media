@@ -57,5 +57,22 @@
     "posted_at": "2026-11-19T11:52:51+00:00",
     "webhook_status": 200,
     "video_removed_at": "2026-11-19T12:07:53+00:00"
+  },
+  {
+    "id": "2026-11-19-google-gemini-4-neon",
+    "type": "reel",
+    "story_key": "google-gemini-4-neon-launch",
+    "headline": "Google مدل Gemini 4 Neon را برای کدنویسی و تحلیل‌های پیچیده عرضه کرد",
+    "source_urls": [
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "https://venturebeat.com/technology/google-launches-gemini-4-neon-with-opus-5-5-level-coding-performance-at-25-lower-api-token-prices"
+    ],
+    "video_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-19-google-gemini-4-neon.mp4",
+    "video_path": "posts/2026/11/2026-11-19-google-gemini-4-neon.mp4",
+    "duration": 29.22,
+    "voice": true,
+    "music": "Decisions",
+    "posted_at": "2026-11-19T15:56:57+00:00",
+    "webhook_status": 200
   }
 ]
