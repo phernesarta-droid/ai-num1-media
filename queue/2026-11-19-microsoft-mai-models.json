@@ -1,0 +1,57 @@
+{
+  "id": "2026-11-19-microsoft-mai-models",
+  "type": "reel",
+  "story_key": "microsoft-ignite-2026-mai-models",
+  "date": "2026-11-19",
+  "tag": "مدل جدید",
+  "headline": "Microsoft در Ignite مدل‌های تازهٔ MAI را برای کدنویسی، تصویر و امنیت معرفی کرد",
+  "hook": "Microsoft حالا مدل‌های تخصصی خودش را برای کدنویسی، تصویر و امنیت دارد.",
+  "summary": "Microsoft روز ۱۷ نوامبر در کنفرانس Ignite چند مدل تازه از خانوادهٔ MAI معرفی کرد. MAI-Code-2 و MAI-Code-2-Flash برای کدنویسی ایجنتی هم‌اکنون در GitHub Copilot و Foundry در دسترس‌اند، دو مدل تصویری MAI-Image-2.7 در پیش‌نمایش و مدل امنیتی MAI-Cyber-2-Flash در پیش‌نمایش خصوصی است. Axios این حرکت را تلاشی برای رقابت با OpenAI و Anthropic با مدل‌های ارزان‌تر و تخصصی می‌داند.",
+  "question": "شما برای کدنویسی کدام دستیار هوش مصنوعی را ترجیح می‌دهید و چرا؟",
+  "reel": {
+    "hook": "رقیب تازهٔ OpenAI و Anthropic؟",
+    "points": [
+      "MAI-Code-2 و نسخهٔ سریع‌ترش برای کدنویسی؛ اکنون در GitHub Copilot",
+      "دو مدل تصویری MAI-Image-2.7 در پیش‌نمایش عرضه شده‌اند",
+      "مدل امنیتی MAI-Cyber-2-Flash فعلاً در پیش‌نمایش خصوصی است"
+    ],
+    "image_prompts": [
+      "A single powerful beam of cyan light rising from a dark ocean horizon at night, clouds parting around it, sense of a new arrival",
+      "Floating translucent geometric blocks assembling themselves into a glowing bridge across a misty canyon, metaphor for building software",
+      "A ribbon of liquid violet and cyan light painting a luminous mountain landscape onto empty dark space, metaphor for image creation",
+      "A shimmering hexagonal dome of cyan light protecting a small glowing seed in a dark quiet forest, metaphor for digital security",
+      "Several glowing paths of light converging into one bright point on a vast dark plain at dawn, metaphor for choosing between options"
+    ],
+    "say": {
+      "hook": "رقیب تازه برای اوپن ای آی؟",
+      "headline": "مایکروسافت مدل‌های تازه‌اش را برای کدنویسی، تصویر و امنیت معرفی کرد.",
+      "points": [
+        "مدل کدنویسی‌اش اکنون در گیت‌هاب کوپایلت در دسترس است.",
+        "دو مدل تصویری در پیش‌نمایش آمده‌اند.",
+        "و مدل امنیتی، فعلاً در پیش‌نمایش خصوصی است."
+      ],
+      "question": "شما کدام دستیار کدنویسی را ترجیح می‌دهید؟"
+    }
+  },
+  "sources": [
+    {
+      "name": "Microsoft",
+      "url": "https://blogs.microsoft.com/blog/2026/11/17/ignite-2026-building-the-frontier-ecosystem/"
+    },
+    {
+      "name": "Microsoft Book of News",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/"
+    },
+    {
+      "name": "Axios",
+      "url": "https://www.axios.com/2026/11/17/microsoft-ai-models-openai-anthropic-ignite"
+    }
+  ],
+  "hashtags": [
+    "Microsoft",
+    "MAI",
+    "GitHub_Copilot",
+    "Ignite",
+    "هوش_مصنوعی"
+  ]
+}
