@@ -113,7 +113,7 @@ The output line `mode: ai` or `mode: classic` says which template was used. With
 
 If the picture fails, change `image_prompt` (simpler, more abstract) or run again with `--regen-bg` for a new image. After **two** failed regenerations, use `--no-ai` (classic template).
 
-**Reels:** the dry run renders the MP4 (about 2 minutes) and prints `frames:` with a contact sheet of one frame per beat (`cache/reel/<id>/keyframes/sheet.jpg`; single frames are next to it). Open the sheet and check every frame:
+**Reels:** the dry run renders the MP4 into `cache/reel/<id>/` (git-ignored; about 2 minutes; it is copied to `posts/` only when publishing) and prints `frames:` with a contact sheet of one frame per beat (`cache/reel/<id>/keyframes/sheet.jpg`; single frames are next to it). Open the sheet and check every frame:
 - text is fully visible, not cut off, no broken or reversed Persian letters, readable over the picture;
 - the pictures: no faces of real-looking people, no logos or brand marks, no letters or pseudo-text (faceless silhouettes are fine);
 - the `reel:` line shows a duration of 20–30 s, the size (must be under 50 MB) and whether `voice` is set.

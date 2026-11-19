@@ -27,6 +27,7 @@ import datetime as dt
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 import time
@@ -177,16 +178,18 @@ def make_image(post, out, regen=False, no_ai=False):
         return "classic", {"error": str(e)[:300]}
 
 
-def make_reel(post, out, rerender=False, regen_images=False, voice=True):
-    """Render the reel, or reuse the reviewed dry-run render if the post's reel fields are unchanged."""
+def make_reel(post, rerender=False, regen_images=False, voice=True):
+    """Render the reel into cache/reel/<id>/ (git-ignored), or reuse the reviewed dry-run render if the
+    post's reel fields are unchanged. Returns (info, path)."""
     from reel import post_hash, probe, render_reel
+    out = REEL_CACHE / post["id"] / f"{post['id']}.mp4"
     meta_file = REEL_CACHE / post["id"] / "render.json"
     h = post_hash(post)
     if out.exists() and meta_file.exists() and not (rerender or regen_images):
         meta = json.loads(meta_file.read_text(encoding="utf-8"))
         if meta.get("hash") == h and meta.get("voice_requested") == voice and meta.get("size") == out.stat().st_size:
             print("reel: reusing the reviewed render", file=sys.stderr)
-            return meta["info"]
+            return meta["info"], out
     kf = REEL_CACHE / post["id"] / "keyframes"
     if kf.exists():
         for f in kf.glob("*.jpg"):
@@ -201,7 +204,7 @@ def make_reel(post, out, rerender=False, regen_images=False, voice=True):
     meta_file.parent.mkdir(parents=True, exist_ok=True)
     meta_file.write_text(json.dumps({"hash": h, "voice_requested": voice, "size": out.stat().st_size, "info": info},
                                     ensure_ascii=False, indent=2), encoding="utf-8")
-    return info
+    return info, out
 
 
 def git(*args, check=True):
@@ -390,20 +393,22 @@ def main():
 def publish_reel(post, post_path, history, a, rel):
     from reel import ReelError
     try:
-        info = make_reel(post, ROOT / rel, rerender=a.rerender, regen_images=a.regen_images, voice=not a.no_voice)
+        info, rendered = make_reel(post, rerender=a.rerender, regen_images=a.regen_images, voice=not a.no_voice)
     except (ReelError, ImageGenError) as e:
         sys.exit(f"reel failed: {e}")
     caption = build_caption(post, music=info["music"])
     video_url = PAGES_BASE + rel.as_posix()
     print("reel: ", json.dumps({k: info[k] for k in ("duration", "size_mb", "voice", "images")}, ensure_ascii=False))
     print("music:", info["music"]["title"])
-    print("video:", ROOT / rel)
+    print("video:", rendered)
     print("frames:", info.get("keyframes"))
     print("url:  ", video_url)
     print("----- caption -----\n" + caption + "\n-------------------")
     if a.dry_run:
         return
 
+    (ROOT / rel).parent.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(rendered, ROOT / rel)
     size = (ROOT / rel).stat().st_size
     push_to_pages([rel, post_path], f"reel: {post['id']}")
     if not wait_live(video_url, ctype="video/mp4", size=size):
