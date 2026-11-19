@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python3 scripts/publish.py:*)"
+      "Bash(python3 scripts/publish.py:*)",
+      "Bash(python3 scripts/reel.py:*)"
     ]
   }
 }
