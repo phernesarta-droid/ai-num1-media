@@ -55,6 +55,7 @@
     "voice": true,
     "music": "Blue Feather",
     "posted_at": "2026-11-19T11:52:51+00:00",
-    "webhook_status": 200
+    "webhook_status": 200,
+    "video_removed_at": "2026-11-19T12:07:53+00:00"
   }
 ]
