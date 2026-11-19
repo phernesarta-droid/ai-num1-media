@@ -1,0 +1,17 @@
+{
+  "id": "2026-11-19-anthropic-ipo-priced",
+  "story_key": "anthropic-ipo-pricing",
+  "date": "2026-11-19",
+  "tag": "سرمایه‌گذاری",
+  "headline": "قیمت عرضهٔ اولیهٔ Anthropic ۸۳ دلار شد؛ بزرگ‌ترین IPO تاریخ با ۸۱ میلیارد دلار",
+  "hook": "سازندهٔ Claude امروز با ارزشی حدود ۱٫۵ تریلیون دلار وارد بورس نزدک می‌شود.",
+  "summary": "Anthropic روز ۱۸ نوامبر قیمت هر سهم در عرضهٔ اولیه را ۸۳ دلار تعیین کرد، بالاتر از بازهٔ پیش‌بینی‌شدهٔ ۷۰ تا ۷۸ دلار. این شرکت با فروش حدود ۹۸۰ میلیون سهم ۸۱٫۳ میلیارد دلار جذب کرد که بزرگ‌ترین عرضهٔ اولیهٔ ثبت‌شده است. ارزش کامل آن حدود ۱٫۵ تریلیون دلار برآورد می‌شود و معاملهٔ سهم با نماد ANT از ۱۹ نوامبر در نزدک آغاز می‌شود.",
+  "question": "به نظر شما ورود شرکت‌های بزرگ هوش مصنوعی به بورس، رقابت را شفاف‌تر می‌کند یا فشار سودآوری را بیشتر؟",
+  "image_prompt": "A colossal glowing doorway of warm amber and cyan light standing open on a dark plain at dawn, a wide luminous path leading through it, sparks of light rising into the sky, minimalist conceptual metaphor for a historic public debut",
+  "sources": [
+    {"name": "Anthropic", "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"},
+    {"name": "CNBC", "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html"},
+    {"name": "Axios", "url": "https://www.axios.com/2026/11/18/anthropic-ipo-1-trillion"}
+  ],
+  "hashtags": ["Anthropic", "IPO", "عرضه_اولیه", "نزدک", "هوش_مصنوعی"]
+}
