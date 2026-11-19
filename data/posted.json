@@ -38,5 +38,23 @@
     "image_mode": "ai",
     "posted_at": "2026-11-19T10:55:17+00:00",
     "webhook_status": 200
+  },
+  {
+    "id": "2026-11-19-microsoft-mai-models",
+    "type": "reel",
+    "story_key": "microsoft-ignite-2026-mai-models",
+    "headline": "Microsoft در Ignite مدل‌های تازهٔ MAI را برای کدنویسی، تصویر و امنیت معرفی کرد",
+    "source_urls": [
+      "https://blogs.microsoft.com/blog/2026/11/17/ignite-2026-building-the-frontier-ecosystem/",
+      "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "https://www.axios.com/2026/11/17/microsoft-ai-models-openai-anthropic-ignite"
+    ],
+    "video_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-19-microsoft-mai-models.mp4",
+    "video_path": "posts/2026/11/2026-11-19-microsoft-mai-models.mp4",
+    "duration": 28.24,
+    "voice": true,
+    "music": "Blue Feather",
+    "posted_at": "2026-11-19T11:52:51+00:00",
+    "webhook_status": 200
   }
 ]
