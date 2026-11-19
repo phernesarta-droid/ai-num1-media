@@ -1,0 +1,53 @@
+{
+  "id": "2026-11-19-google-gemini-4-neon",
+  "type": "reel",
+  "story_key": "google-gemini-4-neon-launch",
+  "date": "2026-11-19",
+  "tag": "مدل جدید",
+  "headline": "Google مدل Gemini 4 Neon را برای کدنویسی و تحلیل‌های پیچیده عرضه کرد",
+  "hook": "Google می‌گوید مدل تازه‌اش هوش سطح بالا را برای کدنویسی با هزینهٔ کمتری در اختیار می‌گذارد.",
+  "summary": "Google روز ۱۸ نوامبر Gemini 4 Neon را معرفی کرد؛ مدلی برای کدنویسی و تحلیل‌های پیچیده با پنجرهٔ زمینهٔ یک میلیون توکنی. قیمت API آن ۳ دلار برای هر میلیون توکن ورودی و ۱۵ دلار برای خروجی است و در Gemini API، Google AI Studio و برای مشترکان Pro و Ultra در اپ Gemini عرضه می‌شود. نتایج بنچمارک‌ها فعلاً بیشتر بر داده‌های خود Google تکیه دارد.",
+  "question": "به نظر شما در انتخاب مدل هوش مصنوعی برای کدنویسی، قیمت مهم‌تر است یا دقت؟",
+  "reel": {
+    "hook": "Gemini تازه؛ هوش بالا با هزینهٔ کمتر؟",
+    "points": [
+      "هر میلیون توکن ورودی ۳ دلار و هر میلیون توکن خروجی ۱۵ دلار",
+      "پنجرهٔ زمینهٔ یک میلیون توکنی برای کدنویسی و تحلیل‌های پیچیده",
+      "در دسترس توسعه‌دهندگان و مشترکان Pro و Ultra اپ Gemini"
+    ],
+    "image_prompts": [
+      "A brilliant new star igniting above a dark mountain range at night, rays of cyan and violet light spreading across the sky, sense of a new arrival",
+      "Glowing translucent blocks of light assembling themselves into an intricate floating structure above a calm dark sea, metaphor for building software",
+      "A vast river of tiny glowing particles flowing through a dark valley and gathering into one enormous luminous lake, metaphor for a huge memory",
+      "A balance scale made of pure light floating in dark space, one side holding a small glowing pebble and the other a large radiant crystal, metaphor for value and cost",
+      "Several glowing doorways of light standing open on a wide dark plain at dawn, a luminous path leading through each, metaphor for many ways in"
+    ],
+    "say": {
+      "hook": "جمنای تازه از گوگل",
+      "headline": "گوگل مدل جمنای چهار نئون را برای کدنویسی و تحلیل‌های پیچیده عرضه کرد.",
+      "points": [
+        "قیمتش سه دلار برای هر میلیون توکن ورودی و پانزده دلار برای خروجی است.",
+        "و تا یک میلیون توکن را یک‌جا پردازش می‌کند.",
+        "این مدل برای توسعه‌دهندگان و مشترکان جمنای در دسترس است."
+      ],
+      "question": "برای کدنویسی، قیمت مهم‌تر است یا دقت؟"
+    }
+  },
+  "sources": [
+    {
+      "name": "Google",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+    },
+    {
+      "name": "VentureBeat",
+      "url": "https://venturebeat.com/technology/google-launches-gemini-4-neon-with-opus-5-5-level-coding-performance-at-25-lower-api-token-prices"
+    }
+  ],
+  "hashtags": [
+    "Gemini",
+    "Google",
+    "مدل_زبانی",
+    "کدنویسی",
+    "هوش_مصنوعی"
+  ]
+}

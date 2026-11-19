@@ -1,6 +1,13 @@
 # Runbook: daily posts for @ai_num1
 
-Every scheduled run (10:00 and 20:00 Dubai time) follows these steps. **One post per run.** If no fresh, verified, non-duplicate story is found, post nothing and stop.
+Two scheduled runs a day (Dubai time), **one post per run**:
+
+| Slot | Format | Queue `type` | Make route |
+|------|--------|--------------|------------|
+| 09:45 | photo post (1080×1350 news card) | `"photo"` (default) | Create a Photo Post (`image_url`, `caption`) |
+| 19:45 | reel (1080×1920 video, 20–30 s) | `"reel"` | Create a Reel Post (`video_url`, `caption`) |
+
+Decide the format from the slot: a run that starts before 15:00 Dubai time is the photo slot, later is the reel slot. If no fresh, verified, non-duplicate story is found, post nothing and stop.
 
 ## 0. Prepare the repo
 ```bash
@@ -9,7 +16,12 @@ git fetch origin main && git checkout -B main origin/main
 ```
 GitHub Pages serves the `main` branch, so images must be pushed there (`publish.py` does that itself).
 `MAKE_WEBHOOK_URL` must be set in the environment; if it is not, stop and report it.
-`CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` are used for the concept image; if they are missing, the post still goes out with the classic template (note it in the report).
+`CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` are used for the concept image; if they are missing, the post still goes out with the classic template (note it in the report). A reel cannot be made without them: in the reel slot, post the story as a photo instead and say so in the report.
+
+Then remove reel videos left on Pages by earlier runs (no-op when there are none):
+```bash
+python3 scripts/publish.py --cleanup
+```
 
 ## 1. Find the news
 - With WebSearch, look for the most important AI news **from the last 24 hours** (since the previous post).
@@ -68,6 +80,28 @@ Every post gets a concept image from Cloudflare Workers AI (FLUX, `@cf/black-for
 - `scripts/imagegen.py` adds the style and the no-text / no-logo / no-faces instructions itself; don't repeat them.
 - If image generation fails (missing keys, HTTP error, timeout, bad image), `publish.py` automatically falls back to the classic template and prints `WARNING: AI image failed …`. That is fine: publish with the classic card and mention it in the report.
 
+## 4b. Reel slot (19:45): extra fields
+Same JSON as above plus `"type": "reel"` and a `reel` object. `headline`, `hook`, `summary`, `question`, `sources` and `hashtags` work exactly as for photos (the caption is built the same way, plus a music credit line). `image_prompt` is not needed.
+```json
+  "type": "reel",
+  "reel": {
+    "hook": "رقیب تازهٔ OpenAI و Anthropic؟",
+    "points": ["…", "…", "…"],
+    "image_prompts": ["English scene 1", "English scene 2", "English scene 3", "English scene 4", "English scene 5"],
+    "say": {
+      "hook": "رقیب تازه برای اوپن ای آی؟",
+      "headline": "…", "points": ["…", "…", "…"], "question": "…؟"
+    }
+  }
+```
+The video shows, in order: `reel.hook` (0–2 s, large) → `headline` → each of `reel.points` → `question` + @ai_num1.
+- `reel.hook`: on-screen opener, **≤45 characters**, the most striking angle in a few words (factual, may be a question). It differs from the caption `hook`.
+- `reel.points`: **2–3** key facts, each **≤90 characters**, one fact per point, only what the sources agree on. Avoid "today/امروز" unless it really happened on the post date.
+- `reel.image_prompts`: **4–5** different concept scenes made for this story (one per beat of the video), same rules as `image_prompt` above: metaphors, no names of companies/products/people, no logos, no faces, no screens/signs/documents. Images are generated vertically (9:16) with FLUX.2 [klein] on Workers AI.
+- `reel.say` (optional but recommended): what the Persian narrator (Piper, voice `fa_IR-ganji-medium`) says for each beat. Piper reads English words and decimals badly, so write names in Persian script (OpenAI → «اوپن ای آی», Microsoft → «مایکروسافت», GitHub Copilot → «گیت‌هاب کوپایلت») and numbers as simple words or round figures. Keep it short: about **40–55 words in total**, the hook ≤5 words (it should take ~2 s). If a `say` entry is missing, the on-screen text is read instead.
+- The script sizes each beat to its narration and keeps the whole reel at 20–30 s. If the narration does not fit even when read faster, the reel is rendered **without** a narrator and the dry run prints `WARNING: narration skipped (…)`: shorten `reel.say` and run the dry run again (`--rerender`). Piper missing or a broken voice file also falls back to music only; that is acceptable, mention it in the report. `--no-voice` forces music only.
+- Music: one of the Kevin MacLeod tracks in `music/` (CC BY 4.0), used in turn; the caption credit is added automatically. Do not use other music.
+
 ## 5. Review and publish
 ```bash
 python3 scripts/publish.py queue/<id>.json --dry-run   # render + caption
@@ -78,11 +112,20 @@ The output line `mode: ai` or `mode: classic` says which template was used. With
 - the headline is clearly readable over the image.
 
 If the picture fails, change `image_prompt` (simpler, more abstract) or run again with `--regen-bg` for a new image. After **two** failed regenerations, use `--no-ai` (classic template).
+
+**Reels:** the dry run renders the MP4 into `cache/reel/<id>/` (git-ignored; about 2 minutes; it is copied to `posts/` only when publishing) and prints `frames:` with a contact sheet of one frame per beat (`cache/reel/<id>/keyframes/sheet.jpg`; single frames are next to it). Open the sheet and check every frame:
+- text is fully visible, not cut off, no broken or reversed Persian letters, readable over the picture;
+- the pictures: no faces of real-looking people, no logos or brand marks, no letters or pseudo-text (faceless silhouettes are fine);
+- the `reel:` line shows a duration of 20–30 s, the size (must be under 50 MB) and whether `voice` is set.
+To replace pictures, change the bad `reel.image_prompts` entries (only those are regenerated) or use `--regen-images` for all; after two failed attempts post the story as a photo instead. The reviewed render is cached and published as is; change the queue JSON or pass `--rerender` to render again.
 The reviewed background is cached in `cache/bg/<id>.jpg` (git-ignored) and reused by the real publish as long as `image_prompt` is unchanged, so the published image is exactly the one you reviewed.
 ```bash
 python3 scripts/publish.py queue/<id>.json
 ```
-The script pushes the image to `main`, waits until it is live on Pages, sends it to the Make webhook, and records it in `data/posted.json`.
+The script pushes the image (or video) to `main`, waits until it is live on Pages, sends it to the Make webhook, and records it in `data/posted.json`.
+Webhook payload: `{"type": "photo", "image_url", "caption"}` or `{"type": "reel", "video_url", "caption"}`; the Make Router sends `type = reel` to *Create a Reel Post*, everything else to *Create a Photo Post*.
+
+**Pages space:** reel videos are removed from the repo again after publishing. If Make's webhook response contains the Instagram media `id` (a *Webhook Response* module after *Create a Reel Post*), the video is removed right away; if Make only answers `Accepted`, the script waits 15 minutes (Instagram fetches the file in that time) and then removes it, so a reel publish takes up to ~20 minutes: let it finish. A video left behind by an interrupted run is removed by `publish.py --cleanup` at the start of the next run.
 
 ## 6. Report
-Report in one or two lines: the headline, the sources, the image URL, the image mode (ai/classic, and why if classic), and the webhook response. On error, write the exact error and do not retry more than once (to avoid a double post).
+Report in one or two lines: the headline, the sources, the image URL, the image mode (ai/classic, and why if classic), and the webhook response. For a reel: the video URL, duration, narration on/off (and why if off), the music track, and whether the video was removed from the repo. On error, write the exact error and do not retry more than once (to avoid a double post).
