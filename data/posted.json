@@ -75,5 +75,20 @@
     "posted_at": "2026-11-19T15:56:57+00:00",
     "webhook_status": 200,
     "video_removed_at": "2026-11-19T16:11:59+00:00"
+  },
+  {
+    "id": "2026-11-20-california-ai-kill-switch",
+    "type": "photo",
+    "story_key": "california-ai-kill-switch-recommendations",
+    "headline": "کالیفرنیا «کلید خاموشی» برای مدل‌های خطرناک هوش مصنوعی پیشنهاد کرد",
+    "source_urls": [
+      "https://www.gov.ca.gov/2026/11/18/governor-newsoms-nation-leading-ai-safety-framework-is-getting-even-stronger-as-california-releases-next-steps-on-mandatory-safety-standards-and-oversight/",
+      "https://calmatters.org/economy/technology/2026/11/newsom-touts-ai-kill-switch/",
+      "https://www.sfchronicle.com/politics/article/newsom-ai-safety-22537670.php"
+    ],
+    "image_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-20-california-ai-kill-switch.jpg",
+    "image_mode": "classic",
+    "posted_at": "2026-11-20T05:48:36+00:00",
+    "webhook_status": 200
   }
 ]
