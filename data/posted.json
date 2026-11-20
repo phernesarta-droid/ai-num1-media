@@ -90,5 +90,22 @@
     "image_mode": "classic",
     "posted_at": "2026-11-20T05:48:36+00:00",
     "webhook_status": 200
+  },
+  {
+    "id": "2026-11-20-ai-stocks-selloff",
+    "type": "reel",
+    "story_key": "ai-stocks-global-selloff-2026-11-20",
+    "headline": "موج فروش سهام هوش مصنوعی از آسیا تا اروپا گسترش یافت",
+    "source_urls": [
+      "https://www.bloomberg.com/news/articles/2026-11-20/us-stock-futures-fall-as-ai-selloff-spreads-to-asia-and-europe",
+      "https://www.cnbc.com/2026/11/20/softbank-ai-tech-stocks-slide-anthropic-debut.html"
+    ],
+    "video_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-20-ai-stocks-selloff.mp4",
+    "video_path": "posts/2026/11/2026-11-20-ai-stocks-selloff.mp4",
+    "duration": 29.01,
+    "voice": true,
+    "music": "Dentaneosuchus Hunt",
+    "posted_at": "2026-11-20T15:53:02+00:00",
+    "webhook_status": 200
   }
 ]
