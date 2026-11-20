@@ -1,0 +1,17 @@
+{
+  "id": "2026-11-20-california-ai-kill-switch",
+  "story_key": "california-ai-kill-switch-recommendations",
+  "date": "2026-11-20",
+  "tag": "قانون‌گذاری",
+  "headline": "کالیفرنیا «کلید خاموشی» برای مدل‌های خطرناک هوش مصنوعی پیشنهاد کرد",
+  "hook": "ایالتی که خانهٔ بزرگ‌ترین شرکت‌های هوش مصنوعی است، می‌خواهد قدرت خاموش کردن مدل‌های خطرناک را در دست بگیرد.",
+  "summary": "گروه کارشناسان منتخب گاوین نیوسام، فرماندار کالیفرنیا، روز ۱۸ نوامبر توصیه‌هایی منتشر کرد که به مقامات ایالت اجازه می‌دهد سامانه‌های هوش مصنوعی خطرناک را به‌طور اضطراری متوقف کنند. این طرح مهلت گزارش حوادث جدی ایمنی را از ۱۵ روز به ۴۸ ساعت کاهش می‌دهد و خواستار ممیزی مستقل است. این پیشنهادها هنوز قانون نشده‌اند و تیم نیوسام در حال آماده کردن لایحه است.",
+  "question": "به نظر شما دولت باید حق خاموش کردن یک مدل هوش مصنوعی را داشته باشد یا این تصمیم باید با خود شرکت‌ها بماند؟",
+  "image_prompt": "A single enormous lever made of glowing cyan light standing on a dark calm plain at night, a vast web of luminous threads stretching from it toward the horizon, minimalist conceptual metaphor for an emergency shutdown switch, smooth unmarked surfaces",
+  "sources": [
+    {"name": "Office of the Governor", "url": "https://www.gov.ca.gov/2026/11/18/governor-newsoms-nation-leading-ai-safety-framework-is-getting-even-stronger-as-california-releases-next-steps-on-mandatory-safety-standards-and-oversight/"},
+    {"name": "CalMatters", "url": "https://calmatters.org/economy/technology/2026/11/newsom-touts-ai-kill-switch/"},
+    {"name": "SF Chronicle", "url": "https://www.sfchronicle.com/politics/article/newsom-ai-safety-22537670.php"}
+  ],
+  "hashtags": ["کلید_خاموشی", "ایمنی_هوش_مصنوعی", "کالیفرنیا", "قانونگذاری_هوش_مصنوعی", "هوش_مصنوعی"]
+}
