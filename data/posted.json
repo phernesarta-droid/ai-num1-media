@@ -106,6 +106,7 @@
     "voice": true,
     "music": "Dentaneosuchus Hunt",
     "posted_at": "2026-11-20T15:53:02+00:00",
-    "webhook_status": 200
+    "webhook_status": 200,
+    "video_removed_at": "2026-11-20T16:08:04+00:00"
   }
 ]
