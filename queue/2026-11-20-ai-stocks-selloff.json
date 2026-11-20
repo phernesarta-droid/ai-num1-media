@@ -1,0 +1,41 @@
+{
+  "id": "2026-11-20-ai-stocks-selloff",
+  "type": "reel",
+  "story_key": "ai-stocks-global-selloff-2026-11-20",
+  "date": "2026-11-20",
+  "tag": "بازار",
+  "headline": "موج فروش سهام هوش مصنوعی از آسیا تا اروپا گسترش یافت",
+  "hook": "عرضهٔ اولیهٔ رکوردشکن Anthropic هم نتوانست نگرانی بازارها دربارهٔ بازدهی هزینه‌های عظیم هوش مصنوعی را آرام کند.",
+  "summary": "روز ۲۰ نوامبر موج فروش سهام شرکت‌های مرتبط با هوش مصنوعی از آسیا تا اروپا گسترش یافت. سهام SoftBank، که سرمایه‌گذاری بزرگی در OpenAI دارد، بیش از ۱۴ درصد سقوط کرد و سهام سازندگان تراشه در کره جنوبی، تایوان و اروپا هم پایین آمد. سهام Anthropic هم در دومین روز معاملاتش افت کرد. سرمایه‌گذاران تردید دارند که هزینه‌های عظیم زیرساخت هوش مصنوعی به سود برسد.",
+  "question": "به نظر شما این افت‌ها نشانهٔ ترکیدن حباب هوش مصنوعی است یا فقط یک اصلاح موقت؟",
+  "reel": {
+    "hook": "بازارها از هوش مصنوعی ترسیدند؟",
+    "points": [
+      "سهام SoftBank بیش از ۱۴ درصد سقوط کرد؛ بدترین روزش در بیش از دو سال",
+      "سهام سازندگان تراشه در کره جنوبی، تایوان و اروپا هم افت کرد",
+      "سهام Anthropic در دومین روز معاملاتش پایین آمد"
+    ],
+    "image_prompts": [
+      "A towering wave of dark water rising under a stormy violet sky, faint cyan light breaking through the clouds, sense of turbulence",
+      "A tall glowing tower of light cracking apart and scattering into falling sparks over a dark calm sea, metaphor for a sudden fall",
+      "A long row of smooth blank glass slabs toppling one after another across a vast dark plain, each glowing cyan as it falls, metaphor for a chain reaction",
+      "Heavy storm clouds spreading across a dark sky over a glowing landscape of light, distant lightning, metaphor for spreading worry",
+      "A lone path of soft light leading up a misty hill at dawn after a storm, sky slowly clearing, metaphor for an uncertain future"
+    ],
+    "say": {
+      "hook": "بازارها ترسیدند؟",
+      "headline": "موج فروش سهام هوش مصنوعی از آسیا تا اروپا گسترش یافت.",
+      "points": [
+        "سهام سافت‌بانک بیش از چهارده درصد سقوط کرد.",
+        "سهام سازندگان تراشه در آسیا و اروپا هم پایین آمد.",
+        "و سهام آنتروپیک هم در روز دوم معاملات افت کرد."
+      ],
+      "question": "حباب ترکیده، یا فقط یک اصلاح موقت است؟"
+    }
+  },
+  "sources": [
+    {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-11-20/us-stock-futures-fall-as-ai-selloff-spreads-to-asia-and-europe"},
+    {"name": "CNBC", "url": "https://www.cnbc.com/2026/11/20/softbank-ai-tech-stocks-slide-anthropic-debut.html"}
+  ],
+  "hashtags": ["بازار_سهام", "SoftBank", "حباب_هوش_مصنوعی", "سهام_تراشه", "هوش_مصنوعی"]
+}
