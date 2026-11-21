@@ -1,0 +1,42 @@
+{
+  "id": "2026-11-21-riemann-hypothesis-ai-proof-claim",
+  "type": "reel",
+  "story_key": "riemann-hypothesis-ai-proof-claim",
+  "date": "2026-11-21",
+  "tag": "پژوهش",
+  "headline": "ادعای اثبات فرضیهٔ ریمان با کمک هوش مصنوعی؛ معمای ۱۶۷ سالهٔ ریاضی",
+  "hook": "شاید مشهورترین مسئلهٔ حل‌نشدهٔ ریاضی با کمک هوش مصنوعی حل شده باشد، اما توضیح کامل اثبات هنوز منتشر نشده است.",
+  "summary": "لِوِنت آلپوگه، ریاضی‌دان Anthropic، روز ۲۰ نوامبر اعلام کرد با کمک Claude اثباتی برای فرضیهٔ تعمیم‌یافتهٔ ریمان یافته است؛ مسئله‌ای که از ۱۸۵۹ حل‌نشده مانده. او حدود ۱۷ میلیون خط کد اثبات‌سنج Lean منتشر کرده و چند ریاضی‌دان مستقل آن را بدون خطا اجرا کرده‌اند. توضیح ۲۵۰ هزار صفحه‌ای اثبات هنوز منتشر نشده و بررسی ادامه دارد.",
+  "question": "اگر اثباتی درست باشد اما هیچ انسانی نتواند آن را کامل بفهمد، به نظر شما می‌توان آن را پذیرفت؟",
+  "reel": {
+    "hook": "معمای ۱۶۷ سالهٔ ریاضی حل شد؟",
+    "points": [
+      "ریاضی‌دان Anthropic می‌گوید با کمک Claude فرضیهٔ تعمیم‌یافتهٔ ریمان را اثبات کرده",
+      "۱۷ میلیون خط کد Lean منتشر شده و ریاضی‌دانان مستقل آن را بدون خطا اجرا کرده‌اند",
+      "توضیح ۲۵۰ هزار صفحه‌ای اثبات هنوز منتشر نشده و بررسی ادامه دارد"
+    ],
+    "image_prompts": [
+      "An endless dark ocean at night with a single straight vertical line of glowing cyan light rising from the water into the stars, mysterious and calm",
+      "Countless tiny glowing points of light aligned perfectly along one vertical line in deep dark space, faint violet nebula around them, metaphor for hidden order",
+      "An endless spiral staircase made of glowing translucent blocks descending into darkness, metaphor for millions of logical steps",
+      "A huge crystal lattice of interlocking light in a dark void, every node glowing softly as it clicks into place, metaphor for machine verification",
+      "A lone faceless silhouette seen from behind at the edge of a cliff, gazing at a vast glowing geometric structure in the night sky, metaphor for human understanding"
+    ],
+    "say": {
+      "hook": "ریمان حل شد؟",
+      "headline": "ادعای اثبات فرضیهٔ ریمان با کمک هوش مصنوعی.",
+      "points": [
+        "ریاضی‌دانی در آنتروپیک می‌گوید با کمک کلود، نسخهٔ تعمیم‌یافتهٔ این فرضیه را اثبات کرده.",
+        "میلیون‌ها خط کد اثبات منتشر شده و ریاضی‌دانان مستقل آن را بدون خطا اجرا کرده‌اند.",
+        "اما توضیح کامل اثبات هنوز منتشر نشده است."
+      ],
+      "question": "اثباتی که انسان نمی‌فهمد، پذیرفتنی است؟"
+    }
+  },
+  "sources": [
+    {"name": "Scientific American", "url": "https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/"},
+    {"name": "Science", "url": "https://www.science.org/content/article/ai-may-have-solved-math-s-greatest-mystery-can-humans-understand-answer"},
+    {"name": "TechCrunch", "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/"}
+  ],
+  "hashtags": ["فرضیه_ریمان", "ریاضیات", "Claude", "Anthropic", "هوش_مصنوعی"]
+}
