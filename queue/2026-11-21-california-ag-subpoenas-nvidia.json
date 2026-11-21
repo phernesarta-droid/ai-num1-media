@@ -1,0 +1,17 @@
+{
+  "id": "2026-11-21-california-ag-subpoenas-nvidia",
+  "story_key": "california-ag-nvidia-subpoena",
+  "date": "2026-11-21",
+  "tag": "حقوقی",
+  "headline": "دادستان کالیفرنیا دربارهٔ رسیدن تراشه‌های Nvidia به چین تحقیق می‌کند",
+  "hook": "دردسرهای Nvidia پس از خروج مدیرعاملش حالا به دادستانی کالیفرنیا هم کشیده شده است.",
+  "summary": "راب بونتا، دادستان کل کالیفرنیا، روز ۱۹ نوامبر یک احضاریهٔ تحقیقاتی برای Nvidia صادر کرد. او بررسی می‌کند که آیا اقدامات این شرکت یا جنسن هوانگ، مدیرعامل سابق آن، باعث شده تراشه‌های پیشرفته یا اطلاعات محرمانه به چین برسد و آیا Nvidia سرمایه‌گذاران و مردم را دربارهٔ این خطر گمراه کرده است. Nvidia بلافاصله به درخواست اظهارنظر پاسخ نداد.",
+  "question": "به نظر شما جلوگیری از رسیدن تراشه‌های پیشرفته به کشورهای تحت محدودیت، مسئولیت شرکت سازنده است یا دولت؟",
+  "image_prompt": "A single glowing cyan cube of light resting on a dark stone pedestal in a vast empty hall, a thin trail of light leading from it toward a distant open doorway, a narrow beam of white light from above illuminating it, minimalist conceptual metaphor for an investigation into leaked technology, smooth unmarked surfaces",
+  "sources": [
+    {"name": "California AG", "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-serves-investigative-subpoena-nvidia"},
+    {"name": "CNBC", "url": "https://www.cnbc.com/2026/11/19/nvidia-california-bonta-subpoena-china-chips.html"},
+    {"name": "TechCrunch", "url": "https://techcrunch.com/2026/11/20/california-ag-subpoenas-nvidia-over-worries-about-huangs-ties-with-china/"}
+  ],
+  "hashtags": ["Nvidia", "تراشه_هوش_مصنوعی", "کنترل_صادرات", "کالیفرنیا", "هوش_مصنوعی"]
+}

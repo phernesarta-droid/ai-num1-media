@@ -108,5 +108,20 @@
     "posted_at": "2026-11-20T15:53:02+00:00",
     "webhook_status": 200,
     "video_removed_at": "2026-11-20T16:08:04+00:00"
+  },
+  {
+    "id": "2026-11-21-california-ag-subpoenas-nvidia",
+    "type": "photo",
+    "story_key": "california-ag-nvidia-subpoena",
+    "headline": "دادستان کالیفرنیا دربارهٔ رسیدن تراشه‌های Nvidia به چین تحقیق می‌کند",
+    "source_urls": [
+      "https://oag.ca.gov/news/press-releases/attorney-general-bonta-serves-investigative-subpoena-nvidia",
+      "https://www.cnbc.com/2026/11/19/nvidia-california-bonta-subpoena-china-chips.html",
+      "https://techcrunch.com/2026/11/20/california-ag-subpoenas-nvidia-over-worries-about-huangs-ties-with-china/"
+    ],
+    "image_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-21-california-ag-subpoenas-nvidia.jpg",
+    "image_mode": "ai",
+    "posted_at": "2026-11-21T05:47:34+00:00",
+    "webhook_status": 200
   }
 ]
