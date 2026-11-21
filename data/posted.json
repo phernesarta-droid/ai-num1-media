@@ -123,5 +123,23 @@
     "image_mode": "ai",
     "posted_at": "2026-11-21T05:47:34+00:00",
     "webhook_status": 200
+  },
+  {
+    "id": "2026-11-21-riemann-hypothesis-ai-proof-claim",
+    "type": "reel",
+    "story_key": "riemann-hypothesis-ai-proof-claim",
+    "headline": "ادعای اثبات فرضیهٔ ریمان با کمک هوش مصنوعی؛ معمای ۱۶۷ سالهٔ ریاضی",
+    "source_urls": [
+      "https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/",
+      "https://www.science.org/content/article/ai-may-have-solved-math-s-greatest-mystery-can-humans-understand-answer",
+      "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/"
+    ],
+    "video_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-21-riemann-hypothesis-ai-proof-claim.mp4",
+    "video_path": "posts/2026/11/2026-11-21-riemann-hypothesis-ai-proof-claim.mp4",
+    "duration": 29.72,
+    "voice": true,
+    "music": "Blue Feather",
+    "posted_at": "2026-11-21T15:52:34+00:00",
+    "webhook_status": 200
   }
 ]
