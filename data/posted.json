@@ -173,6 +173,7 @@
     "voice": true,
     "music": "Decisions",
     "posted_at": "2026-11-22T15:51:00+00:00",
-    "webhook_status": 200
+    "webhook_status": 200,
+    "video_removed_at": "2026-11-22T16:06:02+00:00"
   }
 ]
