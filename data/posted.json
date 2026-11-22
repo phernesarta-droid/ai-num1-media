@@ -157,5 +157,22 @@
     "image_mode": "ai",
     "posted_at": "2026-11-22T05:47:48+00:00",
     "webhook_status": 200
+  },
+  {
+    "id": "2026-11-22-australia-asio-data-centre-warning",
+    "type": "reel",
+    "story_key": "asio-data-centre-foreign-interference-warning",
+    "headline": "هشدار رئیس اطلاعات استرالیا دربارهٔ نفوذ خارجی از راه مراکز دادهٔ هوش مصنوعی",
+    "source_urls": [
+      "https://www.bloomberg.com/news/articles/2026-11-22/australia-spy-chief-warns-of-data-center-ai-risks-age-reports",
+      "https://www.abc.net.au/news/2026-11-22/federal-politics-richard-marles-aukus-submarines-ai-datacentres/107413880"
+    ],
+    "video_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-22-australia-asio-data-centre-warning.mp4",
+    "video_path": "posts/2026/11/2026-11-22-australia-asio-data-centre-warning.mp4",
+    "duration": 29.31,
+    "voice": true,
+    "music": "Decisions",
+    "posted_at": "2026-11-22T15:51:00+00:00",
+    "webhook_status": 200
   }
 ]
