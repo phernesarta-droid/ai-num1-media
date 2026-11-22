@@ -1,0 +1,41 @@
+{
+  "id": "2026-11-22-australia-asio-data-centre-warning",
+  "type": "reel",
+  "story_key": "asio-data-centre-foreign-interference-warning",
+  "date": "2026-11-22",
+  "tag": "امنیت",
+  "headline": "هشدار رئیس اطلاعات استرالیا دربارهٔ نفوذ خارجی از راه مراکز دادهٔ هوش مصنوعی",
+  "hook": "مراکز دادهٔ هوش مصنوعی فقط زیرساخت نیستند؛ رئیس سازمان اطلاعات استرالیا آن‌ها را مسیر تازه‌ای برای نفوذ خارجی می‌داند.",
+  "summary": "مایک برجس، رئیس سازمان اطلاعات امنیتی استرالیا (ASIO)، هشدار داد دولت‌های خارجی ممکن است به‌طور پنهانی مالک مراکز داده شوند و از این راه به فناوری‌ها دسترسی فیزیکی یا مجازی پیدا کنند. او مراکز داده را هم‌زمان «هیاهو، فرصت و تهدید» توصیف کرد. ریچارد مارلز، وزیر دفاع استرالیا، این نگرانی را به‌جا دانست و گفت ساخت مراکز داده مسیر تازه‌ای برای بازیگران خارجی باز می‌کند.",
+  "question": "به نظر شما کشورها باید مالکیت خارجی مراکز دادهٔ هوش مصنوعی را محدود کنند، حتی اگر سرمایه‌گذاری کمتری جذب شود؟",
+  "reel": {
+    "hook": "مراکز داده؛ تهدید امنیتی تازه؟",
+    "points": [
+      "رئیس اطلاعات استرالیا: دولت‌های خارجی ممکن است پنهانی مالک مراکز داده شوند",
+      "چنین مالکیتی می‌تواند دسترسی فیزیکی یا مجازی به فناوری‌ها بدهد",
+      "وزیر دفاع استرالیا این نگرانی را به‌جا دانست"
+    ],
+    "image_prompts": [
+      "A vast field of plain windowless glowing blocks spread across a dark plain at night seen from high above, cool cyan light, a thin dark shadow slowly creeping across them, sense of hidden threat",
+      "Long rows of plain windowless monoliths glowing softly in a dark misty desert, one faint violet thread of light leading away from them into the darkness, metaphor for covert access",
+      "A huge dark storm cloud shaped like an open hand reaching over a glowing grid of light on the ground at night, minimalist, metaphor for foreign control",
+      "An ornate old key made of glowing cyan light floating above a calm dark sea under the stars, metaphor for access",
+      "A tall translucent shield of light standing in front of a glowing grid landscape at dawn, calm clearing sky, metaphor for protecting infrastructure"
+    ],
+    "say": {
+      "hook": "تهدید امنیتی تازه؟",
+      "headline": "رئیس سازمان اطلاعات استرالیا دربارهٔ مراکز دادهٔ هوش مصنوعی هشدار داد.",
+      "points": [
+        "به گفتهٔ او، دولت‌های خارجی ممکن است پنهانی مالک مراکز داده شوند،",
+        "و از این راه به فناوری‌ها دسترسی پیدا کنند.",
+        "وزیر دفاع استرالیا هم این نگرانی را به‌جا دانست."
+      ],
+      "question": "مالکیت خارجی مراکز داده باید محدود شود؟"
+    }
+  },
+  "sources": [
+    {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-11-22/australia-spy-chief-warns-of-data-center-ai-risks-age-reports"},
+    {"name": "ABC News", "url": "https://www.abc.net.au/news/2026-11-22/federal-politics-richard-marles-aukus-submarines-ai-datacentres/107413880"}
+  ],
+  "hashtags": ["مرکز_داده", "امنیت_ملی", "استرالیا", "نفوذ_خارجی", "هوش_مصنوعی"]
+}
