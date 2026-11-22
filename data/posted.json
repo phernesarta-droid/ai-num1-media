@@ -142,5 +142,20 @@
     "posted_at": "2026-11-21T15:52:34+00:00",
     "webhook_status": 200,
     "video_removed_at": "2026-11-21T16:07:35+00:00"
+  },
+  {
+    "id": "2026-11-22-un-killer-robots-talks",
+    "type": "photo",
+    "story_key": "ccw-2026-autonomous-weapons-no-binding-ban",
+    "headline": "مذاکرات ژنو دربارهٔ «ربات‌های قاتل» بدون تعهد به ممنوعیت الزام‌آور پایان یافت",
+    "source_urls": [
+      "https://www.npr.org/2026/11/21/g-s1-154914/nations-at-un-talks-on-ai-killer-robots-agree-to-more-talks-but-no-firm-commitment-to-rein-them-in",
+      "https://www.aljazeera.com/news/2026/11/21/nations-agree-to-draft-rules-for-killer-robots-at-arms-control-summit",
+      "https://www.icrc.org/en/statement/icrc-renews-urgent-call-legally-binding-rules-autonomous-weapons"
+    ],
+    "image_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-22-un-killer-robots-talks.jpg",
+    "image_mode": "ai",
+    "posted_at": "2026-11-22T05:47:48+00:00",
+    "webhook_status": 200
   }
 ]
