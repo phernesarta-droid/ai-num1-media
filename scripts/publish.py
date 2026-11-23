@@ -1,28 +1,28 @@
 #!/usr/bin/env python3
-"""Publish one queued post (photo, carousel or reel) + its story to Instagram @ai_num1 via the Make webhook.
+"""Publish one queued post (photo, carousel or reel) to Instagram @ai_num1 via the Make webhook.
 
 Daily slots (Dubai time; see AUTOMATION.md):
-    morning   09:45  news carousel (6-8 slides)        "type": "carousel", "kind": "news"
+    morning   09:45  news carousel (exactly 6 slides)  "type": "carousel", "kind": "news"
     noon      13:45  photo: second news / tool of day  "type": "photo",    "kind": "news" | "tool"
     afternoon 17:45  educational carousel              "type": "carousel", "kind": "edu"
     evening   20:45  reel (no narrator)                "type": "reel",     "kind": "news"
-Each post is followed by a 1080x1920 story: "پست جدید 👆" intro, or the "سؤال روز" card in the afternoon slot.
+Stories are OFF (STORIES_ENABLED): Make has no story module. scripts/story.py is kept for when a story route exists.
 
 Flow: duplicate + slot check -> caption checks (hook, SEO keywords, closing question, <=5 hashtags)
     -> render (FLUX concept image, classic fallback) -> push to main (GitHub Pages) -> wait until live
-    -> POST to MAKE_WEBHOOK_URL -> record in data/posted.json -> story -> record the story.
+    -> POST to MAKE_WEBHOOK_URL -> record in data/posted.json.
 Webhook payloads:
     {"type": "photo", "image_url", "caption"}
     {"type": "carousel", "image_urls": [...], "caption"}
     {"type": "reel", "video_url", "caption"}
-    {"type": "story", "image_url"}
+    {"type": "story", "image_url"}            (only when STORIES_ENABLED)
 
 Usage:
     python3 scripts/publish.py --slot                     # which slot is it now, and is it already done?
-    python3 scripts/publish.py queue/<id>.json            # full publish (post + story)
-    python3 scripts/publish.py queue/<id>.json --dry-run  # render post, story and caption only
+    python3 scripts/publish.py queue/<id>.json            # full publish
+    python3 scripts/publish.py queue/<id>.json --dry-run  # render post and caption only
     python3 scripts/publish.py --check queue/<id>.json    # only run the duplicate/slot check
-    python3 scripts/publish.py --story-only queue/<id>.json   # retry the story of an already published post
+    python3 scripts/publish.py --story-only queue/<id>.json   # (stories enabled only) retry a post's story
     python3 scripts/publish.py --cleanup                  # remove published reel videos still in the repo
     --no-story       publish the post without its story
     --regen-bg       photo/carousel: discard the cached background and generate a new one
@@ -56,6 +56,8 @@ SLOTS = {
     "evening":   ("20:45", ("reel", "photo"), ("news",), "19:15", "23:59"),   # photo = fallback without images
 }
 KEYWORDS = (2, 4)
+# Make has no module to publish stories, so stories are off; set True once a Make 'story' route exists.
+STORIES_ENABLED = False
 EDU_FORMATS = ("tools", "prompts", "list")   # 17:45: tool roundup / prompt pack / checklist-style list
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -215,7 +217,7 @@ def validate(post):
             errors.append(str(e))
     if post_kind(post) == "edu" and post.get("format") not in EDU_FORMATS:
         errors.append(f"format: edu posts need one of {', '.join(EDU_FORMATS)}")
-    if post_kind(post) == "edu":
+    if STORIES_ENABLED and post_kind(post) == "edu":
         sq = post.get("story_question") or {}
         if not (sq.get("question") or "").strip().endswith(("؟", "?")):
             errors.append("story_question.question: the 'question of the day' story text, ending in ؟")
@@ -485,6 +487,8 @@ def main():
 
     history = load_history()
     if a.story_only:
+        if not STORIES_ENABLED:
+            sys.exit("stories are disabled (STORIES_ENABLED = False in publish.py)")
         entry = next((h for h in history if h["id"] == post["id"]), None)
         if not entry:
             sys.exit(f"{post['id']} is not published yet")
@@ -537,12 +541,15 @@ def base_entry(post, kind):
 
 
 def show(caption, story):
-    print("story:", story)
+    if STORIES_ENABLED:
+        print("story:", story)
     print("----- caption -----\n" + caption + "\n-------------------")
 
 
 def story_card(post, a, bg=None, rendered=None):
-    """Render the story for review/publish; returns (local path, mode)."""
+    """Render the story for review/publish; returns (local path, mode), or (None, "off") when disabled."""
+    if not STORIES_ENABLED or a.no_story:
+        return None, "off"
     out = REVIEW / post["id"] / "story.jpg"
     if bg:
         return make_story(post, out, bg)
@@ -572,7 +579,7 @@ def publish_photo(post, post_path, history, a, rel):
     history.append(entry)
     save_history(history)
     push_to_pages([HISTORY], f"log: posted {post['id']}")
-    if not a.no_story:
+    if story:
         publish_story(post, entry, history, a, story)
     print("DONE")
 
@@ -602,7 +609,7 @@ def publish_carousel(post, post_path, history, a, folder):
     history.append(entry)
     save_history(history)
     push_to_pages([HISTORY], f"log: posted {post['id']}")
-    if not a.no_story:
+    if story:
         publish_story(post, entry, history, a, story)
     print("DONE")
 
@@ -685,7 +692,7 @@ def publish_reel(post, post_path, history, a, rel):
     history.append(entry)
     save_history(history)
     push_to_pages([HISTORY], f"log: posted {post['id']}")
-    if not a.no_story:
+    if story:
         publish_story(post, entry, history, a, story)
 
     # free the Pages space: right away if Make confirmed the reel, otherwise after Instagram had time to fetch it

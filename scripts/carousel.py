@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Carousel slides for @ai_num1: 6-8 JPEG slides, 1080x1350 (4:5), Vazirmatn.
+"""Carousel slides for @ai_num1: exactly 6 JPEG slides, 1080x1350 (4:5), Vazirmatn.
+
+The Make carousel module maps exactly six items (get(1.image_urls; 1) ... get(1.image_urls; 6)), so every
+carousel is cover + 4 content slides + closing slide.
 
 Slide 1   cover: full-bleed FLUX concept image (or the brand gradient) + tag + big title + swipe cue
 Slides    content: one idea per slide (kicker, optional big number, title, body, optional prompt box)
@@ -7,7 +10,7 @@ Last      closing question + save/follow call to action (+ sources for news)
 
 Queue JSON (see AUTOMATION.md): "type": "carousel", "kind": "news" | "edu", the usual caption fields, and
     "cover_title": "optional, defaults to headline",
-    "slides": [ {"kicker": "...", "title": "...", "body": "...", "big": "۴۰٪", "prompt": "..."}, ... ]   # 4-6
+    "slides": [ {"kicker": "...", "title": "...", "body": "...", "big": "۴۰٪", "prompt": "..."}, ... ]   # exactly 4
 Every slide needs a title; kicker, body, big and prompt are optional.
 
 Usage:
@@ -23,7 +26,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from render import (ACCENT, ACCENT2, BG_TOP, MARGIN, MUTED, WHITE, H, W, background, blurred_bg, cover,  # noqa: E402
                     draw_rtl, emoji, fa, font, jalali_label, shade, text_shadow, tw, wrap)
 
-MIN_SLIDES, MAX_SLIDES = 4, 6          # content slides; with cover + closing slide = 6-8 in total
+CONTENT_SLIDES = 4                      # + cover + closing slide = exactly 6 (Make maps 6 items)
 RIGHT = W - MARGIN
 CONTENT_W = W - 2 * MARGIN
 TOP, BOTTOM = 210, H - 170              # content area between header and footer
@@ -40,8 +43,9 @@ def spec(post):
     if kind not in ("news", "edu"):
         errors.append('kind must be "news" or "edu"')
     slides = post.get("slides") or []
-    if not MIN_SLIDES <= len(slides) <= MAX_SLIDES:
-        errors.append(f"slides: {MIN_SLIDES}-{MAX_SLIDES} content slides (6-8 with cover and closing slide), got {len(slides)}")
+    if len(slides) != CONTENT_SLIDES:
+        errors.append(f"slides: exactly {CONTENT_SLIDES} content slides (6 in total with cover and closing slide), "
+                      f"got {len(slides)}")
     for i, s in enumerate(slides, 1):
         if not (s.get("title") or "").strip():
             errors.append(f"slides[{i}]: title is required")
@@ -354,6 +358,7 @@ def render_carousel(post, out_dir, bg_path=None):
     """Render all slides into out_dir as <id>-01.jpg ... ; returns the list of paths."""
     slides = spec(post)
     total = len(slides) + 2
+    assert total == 6, total
     base = blurred_bg(bg_path, W, H, darken=0.72) if bg_path else background()
     images = [cover_slide(post, bg_path, total)]
     images += [content_slide(s, i + 2, total, base) for i, s in enumerate(slides)]
