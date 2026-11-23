@@ -99,18 +99,44 @@ def fit_block(draw, text, weight, sizes, max_w, max_lines):
     raise ValueError(f"Text too long for template: {text[:60]}...")
 
 
-def background():
-    grad = Image.new("RGB", (1, H))
-    for y in range(H):
-        t = y / (H - 1)
+def background(w=W, h=H):
+    """Brand gradient (navy -> violet) with two soft glows; any size."""
+    grad = Image.new("RGB", (1, h))
+    for y in range(h):
+        t = y / (h - 1)
         grad.putpixel((0, y), tuple(int(BG_TOP[i] + (BG_BOTTOM[i] - BG_TOP[i]) * t) for i in range(3)))
-    img = grad.resize((W, H))
-    glow = Image.new("RGB", (W, H), (0, 0, 0))
+    img = grad.resize((w, h))
+    glow = Image.new("RGB", (w, h), (0, 0, 0))
     gd = ImageDraw.Draw(glow)
-    gd.ellipse((W - 520, -260, W + 260, 520), fill=(0, 70, 110))
-    gd.ellipse((-320, H - 560, 420, H + 180), fill=(70, 20, 110))
+    gd.ellipse((w - 520, -260, w + 260, 520), fill=(0, 70, 110))
+    gd.ellipse((-320, h - 560, 420, h + 180), fill=(70, 20, 110))
     glow = glow.filter(ImageFilter.GaussianBlur(160))
     return ImageChops.screen(img, glow)
+
+
+EMOJI_FONT = Path("/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf")
+
+
+def emoji(ch, size):
+    """A color emoji as an RGBA image `size` px tall (Noto Color Emoji), or None if the font is missing."""
+    try:
+        f = ImageFont.truetype(str(EMOJI_FONT), 109)
+    except OSError:
+        return None
+    im = Image.new("RGBA", (160, 160), (0, 0, 0, 0))
+    ImageDraw.Draw(im).text((10, 10), ch, font=f, embedded_color=True)
+    box = im.getbbox()
+    if not box:
+        return None
+    im = im.crop(box)
+    return im.resize((max(1, round(im.width * size / im.height)), size), Image.LANCZOS)
+
+
+def blurred_bg(path, w, h, darken=0.55, blur=38):
+    """Full-bleed, blurred and darkened version of an image (backdrop for text-heavy layouts)."""
+    img = cover(Image.open(path).convert("RGB"), w, h).filter(ImageFilter.GaussianBlur(blur))
+    dark = Image.new("RGB", (w, h), (6, 8, 22))
+    return Image.blend(img, dark, darken)
 
 
 def render(post, out_path):

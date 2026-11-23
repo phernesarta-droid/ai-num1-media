@@ -1,0 +1,22 @@
+{
+  "id": "2026-11-23-tool-gemini-notebook",
+  "type": "photo",
+  "kind": "tool",
+  "slot": "noon",
+  "story_key": "tool-gemini-notebook",
+  "date": "2026-11-23",
+  "tag": "ابزار روز",
+  "headline": "با Gemini Notebook از PDF و ویدیوهای یوتیوب خلاصه، آزمونک و پادکست بسازید",
+  "hook": "اگر برای درس یا کار باید چند PDF و ویدیو بخوانید، این ابزار هوش مصنوعی رایگان Google کار را برایتان کوتاه می‌کند.",
+  "summary": "Gemini Notebook (نام جدید NotebookLM) ابزار پژوهشی Google است که در notebook.google.com و اپ Gemini در دسترس است. فایل PDF، وب‌سایت، ویدیوی یوتیوب یا فایل صوتی را اضافه می‌کنید و پاسخ‌ها فقط بر پایهٔ همین منابع ساخته می‌شوند؛ برای خلاصه کردن PDF، کارت مرور، آزمونک یا یک خلاصهٔ صوتی شبیه پادکست. نسخهٔ رایگان با حساب Google کار می‌کند.",
+  "keywords": ["ابزار هوش مصنوعی", "خلاصه کردن PDF", "Gemini Notebook"],
+  "question": "شما برای خلاصه کردن مقاله‌ها و جزوه‌ها از چه ابزاری استفاده می‌کنید و چه چیزی را در آن کم دارید؟",
+  "items": ["Gemini Notebook"],
+  "image_prompt": "Streams of luminous ribbons and soft glowing sound waves flowing from every direction into a single floating crystal book with smooth blank covers, above a calm dark lake at night, minimalist conceptual metaphor for gathering many sources into one place",
+  "sources": [
+    {"name": "Google Blog", "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/"},
+    {"name": "TechCrunch", "url": "https://techcrunch.com/2026/07/16/google-continues-its-renaming-streak-by-turning-notebooklm-to-gemini-notebook/"},
+    {"name": "Google Workspace Help", "url": "https://knowledge.workspace.google.com/admin/users/access/turn-notebooklm-on-or-off-for-users"}
+  ],
+  "hashtags": ["GeminiNotebook", "NotebookLM", "ابزار_هوش_مصنوعی", "خلاصه_نویسی", "هوش_مصنوعی"]
+}
