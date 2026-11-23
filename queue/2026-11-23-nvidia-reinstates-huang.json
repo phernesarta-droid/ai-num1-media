@@ -1,0 +1,35 @@
+{
+  "id": "2026-11-23-nvidia-reinstates-huang",
+  "type": "reel",
+  "kind": "news",
+  "slot": "evening",
+  "story_key": "nvidia-reinstates-jensen-huang",
+  "date": "2026-11-23",
+  "tag": "خبر داغ هوش مصنوعی",
+  "headline": "بازگشت جنسن هوانگ به مدیرعاملی Nvidia؛ جهش بیش از ۳۰ درصدی سهام",
+  "hook": "تنها شش روز پس از آنکه هیئت‌مدیره گفت او را برنمی‌گرداند، جنسن هوانگ دوباره مدیرعامل Nvidia شد.",
+  "summary": "هیئت‌مدیرهٔ Nvidia روز ۲۳ نوامبر به اتفاق آرا جنسن هوانگ را دوباره به سمت مدیرعامل و عضو هیئت‌مدیره برگرداند و گفت در این تصمیم نظر مقام‌های ارشد دولت آمریکا را هم گرفته است. سهام Nvidia در واکنش بیش از ۳۰ درصد بالا رفت. تحقیقات مستقل هیئت‌مدیره دربارهٔ هوانگ همچنان ادامه دارد.",
+  "keywords": ["Nvidia", "جنسن هوانگ", "سهام Nvidia"],
+  "question": "به نظر شما بازگشت یک مدیرعامل در میانهٔ تحقیقات، به اعتماد سرمایه‌گذاران کمک می‌کند یا ریسک تازه‌ای می‌سازد؟",
+  "reel": {
+    "hook": "جنسن هوانگ برگشت",
+    "points": [
+      "هیئت‌مدیره به اتفاق آرا او را دوباره مدیرعامل کرد",
+      "به گفتهٔ هیئت‌مدیره، نظر مقام‌های ارشد دولت آمریکا هم گرفته شد",
+      "سهام Nvidia بیش از ۳۰ درصد جهش کرد؛ تحقیقات مستقل ادامه دارد"
+    ],
+    "image_prompts": [
+      "A single empty chair made of soft glowing light standing on top of a dark mountain under a starry sky, a beam of cyan light descending back onto it from above, metaphor for a return to leadership",
+      "A round table of glowing glass in a vast dark hall with empty chairs around it, one narrow beam of light falling on its center, metaphor for a unanimous decision",
+      "A towering column of bright light shooting upward from a dark landscape of plain windowless blocks, sparks rising high into the night sky, metaphor for a soaring market",
+      "A brilliant aurora of cyan and violet light suddenly flaring across a dark night sky above a calm sea, metaphor for a sudden surge",
+      "A large translucent lens of light hovering slowly over a dark quiet landscape at night, a soft beam scanning the ground, metaphor for an ongoing investigation"
+    ]
+  },
+  "sources": [
+    {"name": "NVIDIA Newsroom", "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors"},
+    {"name": "CNBC", "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html"},
+    {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-11-23/nvidia-reinstates-jensen-huang-as-ceo-with-government-input"}
+  ],
+  "hashtags": ["Nvidia", "جنسن_هوانگ", "بازار_سهام", "تراشه_هوش_مصنوعی", "هوش_مصنوعی"]
+}
