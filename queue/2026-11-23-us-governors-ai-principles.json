@@ -1,0 +1,28 @@
+{
+  "id": "2026-11-23-us-governors-ai-principles",
+  "story_key": "nga-ai-governance-principles-2026",
+  "date": "2026-11-23",
+  "tag": "قانون‌گذاری",
+  "headline": "فرمانداران آمریکا خواستار قوانین فدرال هوش مصنوعی بدون کنار گذاشتن ایالت‌ها شدند",
+  "hook": "فرمانداران هر دو حزب آمریکا حالا نقشه‌ای مشترک برای تقسیم اختیار قانون‌گذاری هوش مصنوعی میان واشنگتن و ایالت‌ها پیشنهاد داده‌اند.",
+  "summary": "انجمن ملی فرمانداران آمریکا روز ۲۲ نوامبر اصولی برای حکمرانی هوش مصنوعی منتشر کرد. طبق آن، دولت فدرال باید به خطرات ملی مدل‌های پیشرفته بپردازد، از جمله با بررسی ایمنی مستقل و الزام به گزارش حوادث جدی، و ایالت‌ها اختیار حمایت از مصرف‌کننده، مقابله با تبعیض و رسیدگی به اثر هوش مصنوعی بر مشاغل را حفظ کنند. فرمانداران خواسته‌اند قوانین به نفع شرکت‌های بزرگ نباشد.",
+  "question": "به نظر شما قانون‌گذاری هوش مصنوعی باید یکپارچه و ملی باشد یا هر منطقه قوانین خودش را داشته باشد؟",
+  "image_prompt": "Many small glowing lanterns floating above a calm dark lake at night, each with its own soft color, all gently tied together by one long bright cyan ribbon of light curving across the water, minimalist conceptual metaphor for many states sharing one set of rules",
+  "sources": [
+    {
+      "name": "National Governors Association",
+      "url": "https://www.nga.org/news/press-releases/governors-call-for-ai-action/"
+    },
+    {
+      "name": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-22/governors-call-for-federal-ai-rules-without-sidelining-states"
+    }
+  ],
+  "hashtags": [
+    "قانونگذاری_هوش_مصنوعی",
+    "ایمنی_هوش_مصنوعی",
+    "آمریکا",
+    "فرمانداران",
+    "هوش_مصنوعی"
+  ]
+}

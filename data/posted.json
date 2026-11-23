@@ -175,5 +175,19 @@
     "posted_at": "2026-11-22T15:51:00+00:00",
     "webhook_status": 200,
     "video_removed_at": "2026-11-22T16:06:02+00:00"
+  },
+  {
+    "id": "2026-11-23-us-governors-ai-principles",
+    "type": "photo",
+    "story_key": "nga-ai-governance-principles-2026",
+    "headline": "فرمانداران آمریکا خواستار قوانین فدرال هوش مصنوعی بدون کنار گذاشتن ایالت‌ها شدند",
+    "source_urls": [
+      "https://www.nga.org/news/press-releases/governors-call-for-ai-action/",
+      "https://www.bloomberg.com/news/articles/2026-11-22/governors-call-for-federal-ai-rules-without-sidelining-states"
+    ],
+    "image_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-23-us-governors-ai-principles.jpg",
+    "image_mode": "ai",
+    "posted_at": "2026-11-23T05:48:19+00:00",
+    "webhook_status": 200
   }
 ]
