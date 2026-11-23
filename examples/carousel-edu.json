@@ -1,0 +1,76 @@
+{
+  "id": "2026-11-24-sample-edu-summarize-prompts",
+  "type": "carousel",
+  "kind": "edu",
+  "format": "prompts",
+  "slot": "afternoon",
+  "story_key": "edu-prompts-summarize-long-text",
+  "items": [
+    "prompt:summary-3-lines",
+    "prompt:key-points",
+    "prompt:audience-summary",
+    "prompt:claim-check",
+    "prompt:self-quiz"
+  ],
+  "date": "2026-11-24",
+  "tag": "پرامپت کاربردی",
+  "headline": "۵ پرامپت برای خلاصه کردن هر متن طولانی",
+  "cover_title": "۵ پرامپت طلایی برای خلاصه کردن هر متن طولانی",
+  "hook": "به‌جای خواندن کامل یک گزارش ۲۰ صفحه‌ای، با این ۵ پرامپت در چند ثانیه به نکته‌های اصلی‌اش برس.",
+  "summary": "این پرامپت‌ها برای خلاصه کردن متن با هوش مصنوعی در ChatGPT، Claude یا Gemini کار می‌کنند: از چکیدهٔ سه‌خطی و نکته‌های کلیدی تا پیدا کردن ادعاهای بی‌منبع و ساختن سؤال برای مرور. متن را جای [متن] بگذار و نتیجه را با منبع اصلی چک کن.",
+  "keywords": [
+    "پرامپت",
+    "خلاصه کردن متن",
+    "هوش مصنوعی"
+  ],
+  "question": "تو برای خلاصه کردن چه متن‌هایی بیشتر از هوش مصنوعی کمک می‌گیری، و کدام پرامپت برایت بهتر جواب داده؟",
+  "story_question": {
+    "question": "بیشتر برای خلاصه کردن چه متنی از هوش مصنوعی کمک می‌گیری؟",
+    "options": [
+      "مقاله و خبر",
+      "گزارش و ایمیل کاری",
+      "کتاب و جزوهٔ درسی"
+    ]
+  },
+  "image_prompt": "A wide flowing river of soft violet light narrowing gracefully into a single bright cyan droplet suspended above a calm dark surface, minimalist conceptual metaphor for condensing a lot into the essential",
+  "slides": [
+    {
+      "kicker": "پرامپت ۱",
+      "title": "چکیدهٔ سه‌خطی",
+      "body": "وقتی فقط وقت داری نتیجه را بدانی.",
+      "prompt": "این متن را در سه جملهٔ ساده خلاصه کن و مهم‌ترین نتیجه را در جملهٔ اول بگو: [متن]"
+    },
+    {
+      "kicker": "پرامپت ۲",
+      "title": "نکته‌های کلیدی در یک نگاه",
+      "body": "برای جلسه یا یادداشت‌برداری سریع.",
+      "prompt": "مهم‌ترین نکته‌های این متن را در ۵ بولت کوتاه بنویس؛ هر بولت حداکثر ۱۲ کلمه: [متن]"
+    },
+    {
+      "kicker": "پرامپت ۳",
+      "title": "خلاصه برای یک مخاطب مشخص",
+      "body": "خلاصهٔ خوب برای مدیر با خلاصه برای دانشجو فرق دارد.",
+      "prompt": "این گزارش را برای مدیری که فقط ۳۰ ثانیه وقت دارد خلاصه کن: تصمیم لازم، ریسک‌ها و قدم بعدی. [متن]"
+    },
+    {
+      "kicker": "پرامپت ۴",
+      "title": "ادعاهای بی‌منبع را پیدا کن",
+      "body": "قبل از بازنشر یک متن، ادعاهایش را بسنج.",
+      "prompt": "ادعاهایی از این متن را که به منبع یا داده نیاز دارند فهرست کن و برای هر کدام بگو چرا: [متن]"
+    },
+    {
+      "kicker": "پرامپت ۵",
+      "title": "با سؤال، فهمت را بسنج",
+      "body": "برای درس خواندن و مرور.",
+      "prompt": "Create 5 short quiz questions with answers from this text, then explain any answer I get wrong: [TEXT]"
+    }
+  ],
+  "sources": [],
+  "hashtags": [
+    "پرامپت_نویسی",
+    "خلاصه_نویسی",
+    "ChatGPT",
+    "ترفند_هوش_مصنوعی",
+    "هوش_مصنوعی"
+  ]
+}
