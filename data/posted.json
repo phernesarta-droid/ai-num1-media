@@ -189,5 +189,27 @@
     "image_mode": "ai",
     "posted_at": "2026-11-23T05:48:19+00:00",
     "webhook_status": 200
+  },
+  {
+    "id": "2026-11-23-tool-gemini-notebook",
+    "type": "photo",
+    "kind": "tool",
+    "slot": "noon",
+    "date": "2026-11-23",
+    "format": "tool",
+    "story_key": "tool-gemini-notebook",
+    "headline": "با Gemini Notebook از PDF و ویدیوهای یوتیوب خلاصه، آزمونک و پادکست بسازید",
+    "items": [
+      "Gemini Notebook"
+    ],
+    "source_urls": [
+      "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
+      "https://techcrunch.com/2026/07/16/google-continues-its-renaming-streak-by-turning-notebooklm-to-gemini-notebook/",
+      "https://knowledge.workspace.google.com/admin/users/access/turn-notebooklm-on-or-off-for-users"
+    ],
+    "posted_at": "2026-11-23T09:49:05+00:00",
+    "image_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-23-tool-gemini-notebook.jpg",
+    "image_mode": "classic",
+    "webhook_status": 200
   }
 ]
