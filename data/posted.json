@@ -211,5 +211,33 @@
     "image_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-23-tool-gemini-notebook.jpg",
     "image_mode": "classic",
     "webhook_status": 200
+  },
+  {
+    "id": "2026-11-23-edu-prompts-resume-interview",
+    "type": "carousel",
+    "kind": "edu",
+    "slot": "afternoon",
+    "date": "2026-11-23",
+    "format": "prompts",
+    "story_key": "edu-prompts-resume-and-interview",
+    "headline": "۴ پرامپت هوش مصنوعی برای رزومه و مصاحبهٔ شغلی",
+    "items": [
+      "prompt:resume-tailor-to-job",
+      "prompt:resume-results-bullets",
+      "prompt:mock-interview",
+      "prompt:cover-letter-short"
+    ],
+    "source_urls": [],
+    "posted_at": "2026-11-23T13:49:34+00:00",
+    "image_urls": [
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-23-edu-prompts-resume-interview-01.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-23-edu-prompts-resume-interview-02.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-23-edu-prompts-resume-interview-03.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-23-edu-prompts-resume-interview-04.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-23-edu-prompts-resume-interview-05.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-23-edu-prompts-resume-interview-06.jpg"
+    ],
+    "image_mode": "classic",
+    "webhook_status": 200
   }
 ]
