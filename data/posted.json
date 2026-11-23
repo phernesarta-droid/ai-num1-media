@@ -239,5 +239,28 @@
     ],
     "image_mode": "classic",
     "webhook_status": 200
+  },
+  {
+    "id": "2026-11-23-nvidia-reinstates-huang",
+    "type": "reel",
+    "kind": "news",
+    "slot": "evening",
+    "date": "2026-11-23",
+    "format": "news",
+    "story_key": "nvidia-reinstates-jensen-huang",
+    "headline": "بازگشت جنسن هوانگ به مدیرعاملی Nvidia؛ جهش بیش از ۳۰ درصدی سهام",
+    "items": [],
+    "source_urls": [
+      "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+      "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+      "https://www.bloomberg.com/news/articles/2026-11-23/nvidia-reinstates-jensen-huang-as-ceo-with-government-input"
+    ],
+    "posted_at": "2026-11-23T16:51:28+00:00",
+    "video_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-23-nvidia-reinstates-huang.mp4",
+    "video_path": "posts/2026/11/2026-11-23-nvidia-reinstates-huang.mp4",
+    "duration": 28.88,
+    "voice": false,
+    "music": "Dentaneosuchus Hunt",
+    "webhook_status": 200
   }
 ]
