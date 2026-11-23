@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(python3 scripts/publish.py:*)",
-      "Bash(python3 scripts/reel.py:*)"
+      "Bash(python3 scripts/reel.py:*)",
+      "Bash(python3 scripts/carousel.py:*)",
+      "Bash(python3 scripts/render.py:*)",
+      "Bash(python3 scripts/stats.py:*)",
+      "Bash(python3 scripts/story.py:*)"
     ]
   }
 }
