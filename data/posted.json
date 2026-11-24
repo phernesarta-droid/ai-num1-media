@@ -310,5 +310,33 @@
     "image_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-24-amazon-acquires-decart-tech.jpg",
     "image_mode": "ai",
     "webhook_status": 200
+  },
+  {
+    "id": "2026-11-24-edu-list-prompt-mistakes",
+    "type": "carousel",
+    "kind": "edu",
+    "slot": "afternoon",
+    "date": "2026-11-24",
+    "format": "list",
+    "story_key": "edu-list-common-prompt-mistakes",
+    "headline": "۴ اشتباه رایج در نوشتن پرامپت که جواب هوش مصنوعی را خراب می‌کند",
+    "items": [
+      "tip:give-context",
+      "tip:specify-format-length",
+      "tip:verify-facts",
+      "tip:iterate-follow-up"
+    ],
+    "source_urls": [],
+    "posted_at": "2026-11-24T13:48:54+00:00",
+    "image_urls": [
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-24-edu-list-prompt-mistakes-01.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-24-edu-list-prompt-mistakes-02.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-24-edu-list-prompt-mistakes-03.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-24-edu-list-prompt-mistakes-04.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-24-edu-list-prompt-mistakes-05.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-24-edu-list-prompt-mistakes-06.jpg"
+    ],
+    "image_mode": "ai",
+    "webhook_status": 200
   }
 ]
