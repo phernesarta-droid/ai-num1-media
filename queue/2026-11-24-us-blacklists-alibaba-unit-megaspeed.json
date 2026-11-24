@@ -1,0 +1,35 @@
+{
+  "id": "2026-11-24-us-blacklists-alibaba-unit-megaspeed",
+  "type": "reel",
+  "kind": "news",
+  "slot": "evening",
+  "story_key": "us-entity-list-alibaba-apex-megaspeed",
+  "date": "2026-11-24",
+  "tag": "قانون‌گذاری",
+  "headline": "آمریکا یک شرکت وابسته به Alibaba و Megaspeed را در فهرست سیاه صادرات گذاشت",
+  "hook": "آمریکا یک شرکت وابسته به Alibaba را به خاطر خطر رسیدن تراشه‌های هوش مصنوعی به دست غیرمجاز در فهرست سیاه گذاشت.",
+  "summary": "وزارت بازرگانی آمریکا هفت شرکت در سنگاپور، مالزی و تایلند، از جمله یک شرکت سنگاپوری متعلق به Alibaba و شرکت Megaspeed، را به فهرست کنترل صادرات افزود و از «خطر جدی» انحراف محصولات پیشرفتهٔ محاسباتی سخن گفت. این شرکت‌ها بدون مجوز آمریکا نمی‌توانند تراشه‌های پیشرفته بخرند. Alibaba می‌گوید شرکتش هرگز تراشه‌ای را منحرف نکرده و از همهٔ راه‌های قانونی پیگیری می‌کند.",
+  "keywords": ["Alibaba", "تراشه‌های هوش مصنوعی", "کنترل صادرات"],
+  "question": "به نظر شما این محدودیت‌ها جلوی رسیدن تراشه‌ها به چین را می‌گیرد یا فقط مسیرشان را عوض می‌کند؟",
+  "reel": {
+    "hook": "فهرست سیاه تازهٔ تراشه‌ها",
+    "points": [
+      "هفت شرکت در سنگاپور، مالزی و تایلند به فهرست سیاه رفتند",
+      "آن‌ها بدون مجوز آمریکا نمی‌توانند تراشه‌های پیشرفته بخرند",
+      "Alibaba می‌گوید هرگز تراشه‌ای را منحرف نکرده است"
+    ],
+    "image_prompts": [
+      "A tall wall of translucent red and cyan light rising across a dark calm ocean at night, small glowing boats turning away from it, metaphor for export restrictions",
+      "A narrow mountain pass at night blocked by a gate of glowing light, a line of smooth blank glowing cubes stopped in front of it, metaphor for blocked shipments",
+      "Several dark islands in a calm sea seen from high above at night, a few of them outlined in soft warning red light, abstract and minimal, metaphor for restricted places",
+      "A heavy chain made of light wrapped around a glowing cube floating in dark space, metaphor for restrictions",
+      "A balance scale made of light weighing a glowing cube against a dark stone in a misty void, metaphor for a legal dispute"
+    ]
+  },
+  "sources": [
+    {"name": "Federal Register", "url": "https://public-inspection.federalregister.gov/2026-23999.pdf"},
+    {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-11-24/us-blacklists-alibaba-owned-company-in-setback-to-ai-ambitions"},
+    {"name": "CNBC", "url": "https://www.cnbc.com/2026/11/24/us-adds-megaspeed-to-trade-blacklist-over-export-control-concerns-.html"}
+  ],
+  "hashtags": ["Alibaba", "Megaspeed", "کنترل_صادرات", "تراشه_هوش_مصنوعی", "هوش_مصنوعی"]
+}
