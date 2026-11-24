@@ -1,0 +1,45 @@
+{
+  "id": "2026-11-24-virginia-oregon-sue-spacex-grok",
+  "type": "carousel",
+  "kind": "news",
+  "slot": "morning",
+  "story_key": "virginia-oregon-v-spacex-grok-deepfakes",
+  "date": "2026-11-24",
+  "tag": "حقوقی",
+  "headline": "ویرجینیا و اورگان بر سر دیپ‌فیک‌های جنسی Grok از SpaceX شکایت کردند",
+  "cover_title": "ویرجینیا و اورگان بر سر دیپ‌فیک‌های جنسی Grok از SpaceX شکایت کردند",
+  "hook": "دو ایالت آمریکا می‌گویند Grok، هوش مصنوعی ایلان ماسک، جلوی ساخت دیپ‌فیک‌های جنسی بدون رضایت را نگرفته است.",
+  "summary": "دادستان‌های کل ویرجینیا و اورگان روز ۲۳ نوامبر در دو شکایت هماهنگ از SpaceX، شرکت مادر xAI و X، شکایت کردند. به گفتهٔ آن‌ها، شرکت محافظت کافی در برابر ساخت و انتشار دیپ‌فیک‌های جنسی با Grok، از جمله تصاویر سوءاستفاده از کودکان، نداشته و Grok را امن معرفی کرده است. شرکت می‌گوید چنین محتوایی در X و Grok جایی ندارد.",
+  "keywords": ["Grok", "دیپ‌فیک", "ایلان ماسک"],
+  "question": "به نظر شما مسئولیت جلوگیری از دیپ‌فیک‌های جنسی بیشتر با سازندهٔ ابزار هوش مصنوعی است یا با کاربری که آن را می‌سازد؟",
+  "slides": [
+    {
+      "kicker": "چه اتفاقی افتاد؟",
+      "big": "۲",
+      "title": "دو ایالت، دو شکایت هماهنگ",
+      "body": "دادستان‌های کل ویرجینیا و اورگان روز ۲۳ نوامبر علیه SpaceX، شرکت مادر xAI و X، در دادگاه‌های ایالتی شکایت کردند."
+    },
+    {
+      "kicker": "اتهام اصلی",
+      "title": "محافظت ناکافی در برابر دیپ‌فیک‌های جنسی",
+      "body": "به گفتهٔ دادستان‌ها، شرکت جلوی ساخت و انتشار تصاویر جنسی جعلی و بدون رضایت با Grok را نگرفته؛ از جمله تصاویر سوءاستفاده از کودکان."
+    },
+    {
+      "kicker": "پایهٔ حقوقی",
+      "title": "ادعای گمراه کردن کاربران دربارهٔ ایمنی",
+      "body": "ایالت‌ها می‌گویند شرکت Grok و X را امن معرفی کرده و به قوانین حمایت از مصرف‌کننده استناد کرده‌اند. آن‌ها خواستار دستور دادگاه و جریمهٔ مدنی‌اند."
+    },
+    {
+      "kicker": "واکنش و ادامه",
+      "title": "شرکت: این محتوا جایی در X و Grok ندارد",
+      "body": "SpaceX می‌گوید محافظ‌هایش را مدام به‌روز می‌کند. این‌ها فعلاً ادعای شاکیان است و دادگاه باید درباره‌شان تصمیم بگیرد."
+    }
+  ],
+  "image_prompt": "A tall translucent shield of cyan light standing on a dark rainy plain at night, fragments of broken dark glass scattered at its base, cold mist in the air, minimalist conceptual metaphor for protection against fake images",
+  "sources": [
+    {"name": "Virginia AG", "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform"},
+    {"name": "Oregon DOJ", "url": "https://www.doj.state.or.us/media-home/news-media-releases/ag-rayfield-takes-legal-action-against-grok-for-failing-to-block-child-exploitation/"},
+    {"name": "CNBC", "url": "https://www.cnbc.com/2026/11/23/oregon-virginia-spacex-grok-deepfake-lawsuits.html"}
+  ],
+  "hashtags": ["Grok", "دیپ_فیک", "xAI", "امنیت_کودکان", "هوش_مصنوعی"]
+}
