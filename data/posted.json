@@ -338,5 +338,28 @@
     ],
     "image_mode": "ai",
     "webhook_status": 200
+  },
+  {
+    "id": "2026-11-24-us-blacklists-alibaba-unit-megaspeed",
+    "type": "reel",
+    "kind": "news",
+    "slot": "evening",
+    "date": "2026-11-24",
+    "format": "news",
+    "story_key": "us-entity-list-alibaba-apex-megaspeed",
+    "headline": "آمریکا یک شرکت وابسته به Alibaba و Megaspeed را در فهرست سیاه صادرات گذاشت",
+    "items": [],
+    "source_urls": [
+      "https://public-inspection.federalregister.gov/2026-23999.pdf",
+      "https://www.bloomberg.com/news/articles/2026-11-24/us-blacklists-alibaba-owned-company-in-setback-to-ai-ambitions",
+      "https://www.cnbc.com/2026/11/24/us-adds-megaspeed-to-trade-blacklist-over-export-control-concerns-.html"
+    ],
+    "posted_at": "2026-11-24T16:51:02+00:00",
+    "video_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-24-us-blacklists-alibaba-unit-megaspeed.mp4",
+    "video_path": "posts/2026/11/2026-11-24-us-blacklists-alibaba-unit-megaspeed.mp4",
+    "duration": 29.42,
+    "voice": false,
+    "music": "Blue Feather",
+    "webhook_status": 200
   }
 ]
