@@ -1,0 +1,21 @@
+{
+  "id": "2026-11-24-amazon-acquires-decart-tech",
+  "type": "photo",
+  "kind": "news",
+  "slot": "noon",
+  "story_key": "amazon-acquires-decart-technology",
+  "date": "2026-11-24",
+  "tag": "سرمایه‌گذاری",
+  "headline": "Amazon فناوری و تیم Decart را می‌خرد تا تراشه‌های Trainium قوی‌تر شوند",
+  "hook": "Amazon برای تقویت تراشه هوش مصنوعی خودش در برابر Nvidia، فناوری و تیم استارتاپ Decart را می‌خرد.",
+  "summary": "Amazon روز ۲۳ نوامبر اعلام کرد فناوری بهینه‌سازی Decart، استارتاپ اسرائیلی، را می‌خرد و بنیان‌گذاران و پژوهشگرانش را استخدام می‌کند. این نرم‌افزار اجرای مدل‌ها را روی تراشه‌های سازندگان مختلف بهینه می‌کند و Amazon آن را در Trainium به کار برده است. Bloomberg ارزش معامله را حدود ۷٫۵ میلیارد دلار گزارش کرده، اما Amazon رقم را تأیید نکرده و معامله به تأیید نهادهای نظارتی نیاز دارد.",
+  "keywords": ["Amazon", "تراشه هوش مصنوعی", "Nvidia"],
+  "question": "به نظر شما کدام شرکت بیشترین شانس را برای رقابت جدی با Nvidia در تراشه‌های هوش مصنوعی دارد و چرا؟",
+  "image_prompt": "Two glowing rivers of light, one cyan and one violet, merging into a single bright stream that flows faster across a dark valley at night, minimalist conceptual metaphor for a merger that speeds things up",
+  "sources": [
+    {"name": "CNBC", "url": "https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html"},
+    {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-11-23/amazon-is-said-to-pay-7-5-billion-for-ai-startup-decart-s-tech"},
+    {"name": "TechCrunch", "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/"}
+  ],
+  "hashtags": ["Amazon", "Decart", "Trainium", "تراشه_هوش_مصنوعی", "هوش_مصنوعی"]
+}
