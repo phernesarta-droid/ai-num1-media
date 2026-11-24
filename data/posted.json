@@ -263,5 +263,32 @@
     "music": "Dentaneosuchus Hunt",
     "webhook_status": 200,
     "video_removed_at": "2026-11-23T17:06:30+00:00"
+  },
+  {
+    "id": "2026-11-24-virginia-oregon-sue-spacex-grok",
+    "type": "carousel",
+    "kind": "news",
+    "slot": "morning",
+    "date": "2026-11-24",
+    "format": "news",
+    "story_key": "virginia-oregon-v-spacex-grok-deepfakes",
+    "headline": "ویرجینیا و اورگان بر سر دیپ‌فیک‌های جنسی Grok از SpaceX شکایت کردند",
+    "items": [],
+    "source_urls": [
+      "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
+      "https://www.doj.state.or.us/media-home/news-media-releases/ag-rayfield-takes-legal-action-against-grok-for-failing-to-block-child-exploitation/",
+      "https://www.cnbc.com/2026/11/23/oregon-virginia-spacex-grok-deepfake-lawsuits.html"
+    ],
+    "posted_at": "2026-11-24T05:48:26+00:00",
+    "image_urls": [
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-24-virginia-oregon-sue-spacex-grok-01.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-24-virginia-oregon-sue-spacex-grok-02.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-24-virginia-oregon-sue-spacex-grok-03.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-24-virginia-oregon-sue-spacex-grok-04.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-24-virginia-oregon-sue-spacex-grok-05.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-24-virginia-oregon-sue-spacex-grok-06.jpg"
+    ],
+    "image_mode": "classic",
+    "webhook_status": 200
   }
 ]
