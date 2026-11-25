@@ -1,0 +1,34 @@
+{
+  "id": "2026-11-25-cia-system-breach-ai-tool",
+  "type": "reel",
+  "kind": "news",
+  "slot": "evening",
+  "story_key": "cia-odni-osint-system-breach-artex",
+  "date": "2026-11-25",
+  "tag": "امنیت سایبری",
+  "headline": "نفوذ به سامانهٔ غیرطبقه‌بندی‌شدهٔ CIA؛ گزارش‌ها از استفاده از ابزار هک هوش مصنوعی",
+  "hook": "گزارش‌ها می‌گویند مهاجمان برای نفوذ به یک سامانهٔ اطلاعاتی CIA از یک ابزار هک مبتنی بر هوش مصنوعی استفاده کرده‌اند.",
+  "summary": "هکرها به یک سامانهٔ غیرطبقه‌بندی‌شده برای تحلیل اطلاعات آشکار نفوذ کردند که CIA و دفتر مدیر اطلاعات ملی آمریکا از آن استفاده می‌کنند. مقام‌ها می‌گویند شبکه‌ها و اطلاعات طبقه‌بندی‌شده درگیر نبوده‌اند. چند رسانه گزارش داده‌اند مهاجمان از Artex، ابزاری که مراحل نفوذ را با مدل‌های زبانی خودکار می‌کند، استفاده کرده‌اند؛ عامل حمله هنوز رسماً اعلام نشده است.",
+  "keywords": ["CIA", "ابزار هک", "Artex"],
+  "question": "به نظر شما ابزارهای هک مبتنی بر هوش مصنوعی در نهایت بیشتر به مهاجمان کمک می‌کنند یا به مدافعان؟",
+  "reel": {
+    "hook": "هک CIA با هوش مصنوعی؟",
+    "points": [
+      "یک سامانهٔ تحلیل اطلاعات آشکار CIA و ODNI هک شد",
+      "به گفتهٔ مقام‌ها، شبکه‌ها و اطلاعات طبقه‌بندی‌شده درگیر نبودند",
+      "گزارش‌ها: مهاجمان از ابزار هوش مصنوعی Artex استفاده کرده‌اند"
+    ],
+    "image_prompts": [
+      "A vast fortress wall of smooth black stone at night with a single thin crack glowing faint red, cold mist drifting around it, metaphor for a breach",
+      "A swarm of tiny red light particles slipping through a narrow gap in a glowing cyan grid barrier in dark space, metaphor for an intrusion",
+      "A heavy round vault door of smooth unmarked dark metal standing closed and intact, soft cyan light along its edges, metaphor for protected secrets",
+      "An abstract web of glowing cyan nodes in darkness where a few nodes turn red one after another, metaphor for automated attack steps",
+      "A lone faceless silhouette seen from behind facing a huge wall of dark fog with faint red light glowing behind it, metaphor for an unknown attacker"
+    ]
+  },
+  "sources": [
+    {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-11-24/hackers-breach-cia-system-to-access-unclassified-information"},
+    {"name": "CyberScoop", "url": "https://cyberscoop.com/cia-odni-osint-data-breach"}
+  ],
+  "hashtags": ["امنیت_سایبری", "CIA", "Artex", "هک", "هوش_مصنوعی"]
+}
