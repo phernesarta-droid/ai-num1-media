@@ -1,0 +1,44 @@
+{
+  "id": "2026-11-25-meta-muse-instagram-dms",
+  "type": "carousel",
+  "kind": "news",
+  "slot": "morning",
+  "story_key": "meta-muse-in-instagram-dms",
+  "date": "2026-11-25",
+  "tag": "محصول جدید",
+  "headline": "Meta دستیار هوش مصنوعی Muse را به دایرکت اینستاگرام آورد",
+  "cover_title": "Meta دستیار هوش مصنوعی Muse را به دایرکت اینستاگرام آورد",
+  "hook": "از این به بعد می‌شود در دایرکت اینستاگرام با دستیار هوش مصنوعی Meta گفتگو کرد؛ فعلاً در پنج کشور.",
+  "summary": "Meta روز ۲۴ نوامبر عرضهٔ Muse، دستیار هوش مصنوعی خود، را در دایرکت اینستاگرام برای کاربران iOS و Android در آمریکا، کانادا، مکزیک، ژاپن و سنگاپور آغاز کرد. کاربران می‌توانند در گفتگویی جداگانه با Muse دربارهٔ یک پست، مکان یا محصول توضیح بگیرند یا ببینند در دایرکت‌های دیگر چه چیزی را از دست داده‌اند. این قابلیت فقط برای کسانی است که حساب اینستاگرام و Muse را به هم وصل کرده‌اند.",
+  "keywords": ["دایرکت اینستاگرام", "دستیار هوش مصنوعی", "Muse"],
+  "question": "اگر Muse به دایرکت شما هم برسد، اجازه می‌دهید گفتگوهایتان را خلاصه کند یا نگران حریم خصوصی هستید؟",
+  "slides": [
+    {
+      "kicker": "چه اتفاقی افتاد؟",
+      "big": "۵",
+      "title": "Muse وارد دایرکت اینستاگرام شد",
+      "body": "Meta روز ۲۴ نوامبر عرضهٔ دستیار هوش مصنوعی‌اش را در دایرکت اینستاگرام، روی iOS و Android، در پنج کشور آغاز کرد."
+    },
+    {
+      "kicker": "کجا؟",
+      "title": "آمریکا، کانادا، مکزیک، ژاپن و سنگاپور",
+      "body": "قابلیت جداگانه‌ای که پست‌های ذخیره‌شده را با کمک Muse مرتب می‌کند، فعلاً فقط در آمریکا و کانادا عرضه شده است."
+    },
+    {
+      "kicker": "چه کاری می‌کند؟",
+      "title": "توضیح پست‌ها و خلاصهٔ گفتگوها",
+      "body": "در گفتگویی جداگانه با Muse می‌توانید دربارهٔ یک پست، مکان یا محصول توضیح بگیرید یا بفهمید در دایرکت‌های دیگر چه چیزی را از دست داده‌اید."
+    },
+    {
+      "kicker": "نکتهٔ مهم",
+      "title": "فقط با اتصال حساب‌ها",
+      "body": "این قابلیت فقط برای کاربرانی است که حساب اینستاگرام و Muse را به هم وصل کرده‌اند. به گفتهٔ اینستاگرام، چت‌بات Meta AI هم حذف نمی‌شود."
+    }
+  ],
+  "image_prompt": "Many small smooth empty rounded shapes of soft light floating in a dark night sky above a calm sea, one larger violet orb of light among them gently linking them with thin glowing threads, minimalist conceptual metaphor for an assistant inside private conversations",
+  "sources": [
+    {"name": "TechCrunch", "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/"},
+    {"name": "Engadget", "url": "https://www.engadget.com/2326663/meta-is-bringing-muse-to-instagram/"}
+  ],
+  "hashtags": ["اینستاگرام", "Muse", "Meta", "دستیار_هوش_مصنوعی", "هوش_مصنوعی"]
+}
