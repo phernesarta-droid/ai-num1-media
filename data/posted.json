@@ -362,5 +362,31 @@
     "music": "Blue Feather",
     "webhook_status": 200,
     "video_removed_at": "2026-11-24T17:06:04+00:00"
+  },
+  {
+    "id": "2026-11-25-meta-muse-instagram-dms",
+    "type": "carousel",
+    "kind": "news",
+    "slot": "morning",
+    "date": "2026-11-25",
+    "format": "news",
+    "story_key": "meta-muse-in-instagram-dms",
+    "headline": "Meta دستیار هوش مصنوعی Muse را به دایرکت اینستاگرام آورد",
+    "items": [],
+    "source_urls": [
+      "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+      "https://www.engadget.com/2326663/meta-is-bringing-muse-to-instagram/"
+    ],
+    "posted_at": "2026-11-25T05:48:13+00:00",
+    "image_urls": [
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-25-meta-muse-instagram-dms-01.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-25-meta-muse-instagram-dms-02.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-25-meta-muse-instagram-dms-03.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-25-meta-muse-instagram-dms-04.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-25-meta-muse-instagram-dms-05.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-25-meta-muse-instagram-dms-06.jpg"
+    ],
+    "image_mode": "ai",
+    "webhook_status": 200
   }
 ]
