@@ -1,0 +1,21 @@
+{
+  "id": "2026-11-25-tool-perplexity",
+  "type": "photo",
+  "kind": "tool",
+  "slot": "noon",
+  "story_key": "tool-perplexity",
+  "date": "2026-11-25",
+  "tag": "ابزار روز",
+  "headline": "با Perplexity جواب بگیرید و منبع هر جواب را هم ببینید",
+  "hook": "اگر از جواب‌های بی‌منبع چت‌بات‌ها خسته شده‌اید، این موتور جستجوی هوش مصنوعی کنار هر پاسخ لینک منبعش را می‌گذارد.",
+  "summary": "Perplexity سؤال شما را در وب جستجو می‌کند و پاسخی خلاصه می‌دهد که هر بخشش به منبع اصلی لینک شده است؛ پس می‌توانید درستی اطلاعات را خودتان بررسی کنید. نسخهٔ پایه یک ابزار هوش مصنوعی رایگان با سقف استفادهٔ محدود است و مدل‌های پیشرفته‌تر در پلن‌های پولی ارائه می‌شوند. نکته: همیشه چند لینک را باز کنید و خود منبع را بخوانید.",
+  "keywords": ["موتور جستجوی هوش مصنوعی", "Perplexity", "ابزار هوش مصنوعی رایگان"],
+  "question": "شما برای پیدا کردن اطلاعات معتبر بیشتر از Google استفاده می‌کنید یا از یک موتور جستجوی هوش مصنوعی، و چرا؟",
+  "items": ["Perplexity"],
+  "image_prompt": "A glowing magnifying lens of soft cyan light floating above a dark calm sea at night, thin threads of light linking it to small distant points of light on the horizon, minimalist conceptual metaphor for search with traceable sources",
+  "sources": [
+    {"name": "Perplexity Help Center", "url": "https://www.perplexity.ai/help-center/en/articles/10352895-how-does-perplexity-work"},
+    {"name": "Perplexity Pricing", "url": "https://www.perplexity.ai/hub/pricing"}
+  ],
+  "hashtags": ["Perplexity", "موتور_جستجو", "ابزار_هوش_مصنوعی", "جستجوی_هوشمند", "هوش_مصنوعی"]
+}
