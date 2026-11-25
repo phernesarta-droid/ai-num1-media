@@ -409,5 +409,37 @@
     "image_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-25-tool-perplexity.jpg",
     "image_mode": "ai",
     "webhook_status": 200
+  },
+  {
+    "id": "2026-11-25-edu-tools-presentations",
+    "type": "carousel",
+    "kind": "edu",
+    "slot": "afternoon",
+    "date": "2026-11-25",
+    "format": "tools",
+    "story_key": "edu-tools-ai-presentation-makers",
+    "headline": "۴ ابزار هوش مصنوعی برای ساخت ارائه در چند دقیقه",
+    "items": [
+      "Gamma",
+      "Canva Magic Design",
+      "Copilot in PowerPoint",
+      "Gemini in Google Slides"
+    ],
+    "source_urls": [
+      "https://gamma.app/pricing",
+      "https://www.canva.com/create/ai-presentations/",
+      "https://support.microsoft.com/en-us/topic/create-a-presentation-from-existing-files-beb15deb-3241-4711-a480-9cbd8dc4d755"
+    ],
+    "posted_at": "2026-11-25T13:47:46+00:00",
+    "image_urls": [
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-25-edu-tools-presentations-01.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-25-edu-tools-presentations-02.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-25-edu-tools-presentations-03.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-25-edu-tools-presentations-04.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-25-edu-tools-presentations-05.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-25-edu-tools-presentations-06.jpg"
+    ],
+    "image_mode": "ai",
+    "webhook_status": 200
   }
 ]

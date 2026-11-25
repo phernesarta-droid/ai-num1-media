@@ -1,0 +1,46 @@
+{
+  "id": "2026-11-25-edu-tools-presentations",
+  "type": "carousel",
+  "kind": "edu",
+  "format": "tools",
+  "slot": "afternoon",
+  "story_key": "edu-tools-ai-presentation-makers",
+  "date": "2026-11-25",
+  "tag": "آموزش",
+  "headline": "۴ ابزار هوش مصنوعی برای ساخت ارائه در چند دقیقه",
+  "cover_title": "۴ ابزار هوش مصنوعی برای ساخت ارائه در چند دقیقه",
+  "hook": "با این ۴ ابزار هوش مصنوعی، پیش‌نویس ارائهٔ بعدی‌تان را به‌جای چند ساعت در چند دقیقه آماده کنید.",
+  "summary": "Gamma، Canva، Copilot در پاورپوینت و Gemini در Google Slides همه از روی یک متن کوتاه پیش‌نویس اسلاید می‌سازند و ساخت ارائه را سریع‌تر می‌کنند. بعضی نسخهٔ رایگانِ محدود دارند و بعضی فقط با اشتراک پولی کار می‌کنند. خروجی هوش مصنوعی را همیشه بازبینی و ویرایش کنید.",
+  "keywords": ["ابزار هوش مصنوعی", "ساخت ارائه", "پاورپوینت"],
+  "question": "شما برای ساخت ارائه از کدام ابزار استفاده می‌کنید و بزرگ‌ترین دردسرتان در ساخت اسلاید چیست؟",
+  "items": ["Gamma", "Canva Magic Design", "Copilot in PowerPoint", "Gemini in Google Slides"],
+  "slides": [
+    {
+      "kicker": "ابزار ۱",
+      "title": "Gamma: کل ارائه از یک متن",
+      "body": "از یک پرامپت، طرح کلی یا فایل، پیش‌نویس کامل ارائه می‌سازد و می‌توانید با هوش مصنوعی‌اش اصلاحش کنید. نسخهٔ رایگان دارد، اما خروجی‌هایش واترمارک Gamma دارند."
+    },
+    {
+      "kicker": "ابزار ۲",
+      "title": "Canva: قالب آماده با متن پیشنهادی",
+      "body": "یک موضوع کوتاه بنویسید تا Magic Design چند قالب با طرح کلی و متن نمونه پیشنهاد کند. در حساب رایگان تعداد استفاده محدود است و فعلاً پرامپت انگلیسی می‌خواهد."
+    },
+    {
+      "kicker": "ابزار ۳",
+      "title": "Copilot در پاورپوینت",
+      "body": "داخل خود PowerPoint از روی پرامپت پیش‌نویس ارائه می‌سازد و ممکن است دربارهٔ مخاطب و سبک سؤال کند. به اشتراک Microsoft 365 نیاز دارد و در نسخهٔ رایگان نیست."
+    },
+    {
+      "kicker": "ابزار ۴",
+      "title": "Gemini در Google Slides",
+      "body": "اسلاید تازه می‌سازد و با نوشتن @ می‌توانید فایل‌های Google Drive را به آن بدهید. برای اشتراک‌های پولی Google و حساب‌های کاری در دسترس است."
+    }
+  ],
+  "image_prompt": "A single beam of warm light projecting a soft glowing rectangle of pure blank light onto a dark misty wall, dust particles floating in the beam, minimalist conceptual metaphor for a presentation",
+  "sources": [
+    {"name": "Gamma", "url": "https://gamma.app/pricing"},
+    {"name": "Canva", "url": "https://www.canva.com/create/ai-presentations/"},
+    {"name": "Microsoft Support", "url": "https://support.microsoft.com/en-us/topic/create-a-presentation-from-existing-files-beb15deb-3241-4711-a480-9cbd8dc4d755"}
+  ],
+  "hashtags": ["ساخت_ارائه", "پاورپوینت", "ابزار_هوش_مصنوعی", "Gamma", "هوش_مصنوعی"]
+}
