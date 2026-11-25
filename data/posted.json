@@ -388,5 +388,26 @@
     ],
     "image_mode": "ai",
     "webhook_status": 200
+  },
+  {
+    "id": "2026-11-25-tool-perplexity",
+    "type": "photo",
+    "kind": "tool",
+    "slot": "noon",
+    "date": "2026-11-25",
+    "format": "tool",
+    "story_key": "tool-perplexity",
+    "headline": "با Perplexity جواب بگیرید و منبع هر جواب را هم ببینید",
+    "items": [
+      "Perplexity"
+    ],
+    "source_urls": [
+      "https://www.perplexity.ai/help-center/en/articles/10352895-how-does-perplexity-work",
+      "https://www.perplexity.ai/hub/pricing"
+    ],
+    "posted_at": "2026-11-25T09:47:12+00:00",
+    "image_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-25-tool-perplexity.jpg",
+    "image_mode": "ai",
+    "webhook_status": 200
   }
 ]
