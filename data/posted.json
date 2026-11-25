@@ -462,6 +462,7 @@
     "duration": 30.0,
     "voice": false,
     "music": "Decisions",
-    "webhook_status": 200
+    "webhook_status": 200,
+    "video_removed_at": "2026-11-25T17:06:47+00:00"
   }
 ]
