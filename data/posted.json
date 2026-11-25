@@ -441,5 +441,28 @@
     ],
     "image_mode": "ai",
     "webhook_status": 200
+  },
+  {
+    "id": "2026-11-25-cia-system-breach-ai-tool",
+    "type": "reel",
+    "kind": "news",
+    "slot": "evening",
+    "date": "2026-11-25",
+    "format": "news",
+    "story_key": "cia-odni-osint-system-breach-artex",
+    "headline": "نفوذ به سامانهٔ غیرطبقه‌بندی‌شدهٔ CIA؛ گزارش‌ها از استفاده از ابزار هک هوش مصنوعی",
+    "items": [],
+    "source_urls": [
+      "https://www.bloomberg.com/news/articles/2026-11-24/hackers-breach-cia-system-to-access-unclassified-information",
+      "https://cyberscoop.com/cia-odni-osint-data-breach"
+    ],
+    "posted_at": "2026-11-25T16:51:46+00:00",
+    "video_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-25-cia-system-breach-ai-tool.mp4",
+    "video_path": "posts/2026/11/2026-11-25-cia-system-breach-ai-tool.mp4",
+    "duration": 30.0,
+    "voice": false,
+    "music": "Decisions",
+    "webhook_status": 200,
+    "video_removed_at": "2026-11-25T17:06:47+00:00"
   }
 ]
