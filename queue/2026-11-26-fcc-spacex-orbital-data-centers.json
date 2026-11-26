@@ -1,0 +1,46 @@
+{
+  "id": "2026-11-26-fcc-spacex-orbital-data-centers",
+  "type": "carousel",
+  "kind": "news",
+  "slot": "morning",
+  "story_key": "fcc-approves-spacex-orbital-data-centers",
+  "date": "2026-11-26",
+  "tag": "خبر داغ هوش مصنوعی",
+  "headline": "مجوز آمریکا به SpaceX برای یک میلیون ماهوارهٔ مرکز داده در مدار",
+  "cover_title": "مجوز آمریکا به SpaceX برای یک میلیون ماهوارهٔ مرکز داده در مدار",
+  "hook": "SpaceX حالا مجوز دارد مراکز داده هوش مصنوعی را به‌جای زمین، در مدار زمین بسازد.",
+  "summary": "کمیسیون ارتباطات فدرال آمریکا روز ۲۵ نوامبر به SpaceX مجوز مشروط داد تا شبکه‌ای تا یک میلیون ماهواره را به‌عنوان مراکز داده در مدار زمین مستقر کند. SpaceX هفت سال برای پرتاب اولین ماهوارهٔ عملیاتی و ۱۴ سال برای کل شبکه فرصت دارد. Amazon و Viasat و انجمن نجوم آمریکا با این طرح مخالف بودند و طرح مدیریت زبالهٔ فضایی آن هنوز تأیید نشده است.",
+  "keywords": ["SpaceX", "مراکز داده", "ماهواره"],
+  "question": "به نظر شما ساخت مراکز داده در فضا راه‌حل کمبود انرژی هوش مصنوعی است یا خطر تازه‌ای برای مدار زمین؟",
+  "slides": [
+    {
+      "kicker": "چه اتفاقی افتاد؟",
+      "big": "۱ میلیون",
+      "title": "مجوز مشروط برای مراکز داده در مدار",
+      "body": "کمیسیون ارتباطات فدرال آمریکا روز ۲۵ نوامبر به SpaceX اجازه داد شبکه‌ای تا یک میلیون ماهواره را به‌عنوان مرکز داده در مدار زمین راه بیندازد."
+    },
+    {
+      "kicker": "زمان‌بندی",
+      "big": "۱۴ سال",
+      "title": "هنوز راه درازی در پیش است",
+      "body": "SpaceX هفت سال فرصت دارد اولین ماهوارهٔ عملیاتی را به مدار بفرستد و ۱۴ سال برای استقرار کل شبکه. یعنی مراکز داده فضایی فعلاً نزدیک نیستند."
+    },
+    {
+      "kicker": "مخالفان",
+      "title": "Amazon و Viasat و منجمان مخالف بودند",
+      "body": "کمیسیون نگرانی‌های زیست‌محیطی را خارج از اختیار خود دانست. گروه محیط‌زیستی Earthjustice می‌گوید این تصمیم بدون بررسی زیست‌محیطی گرفته شده است."
+    },
+    {
+      "kicker": "پرسش باز",
+      "title": "طرح مدیریت زبالهٔ فضایی هنوز تأیید نشده",
+      "body": "برنامهٔ SpaceX برای مدیریت زبالهٔ فضایی ماهواره‌هایی که بالاتر از ۶۰۰ کیلومتر کار می‌کنند، هنوز تأیید نشده است."
+    }
+  ],
+  "image_prompt": "A vast ring of countless tiny glowing points of light orbiting the dark night side of a planet seen from space, a thin cyan glow along the horizon, minimalist conceptual metaphor for data centers in orbit",
+  "sources": [
+    {"name": "FCC", "url": "https://docs.fcc.gov/public/attachments/DOC-427572A1.txt"},
+    {"name": "CNBC", "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html"},
+    {"name": "TechCrunch", "url": "https://techcrunch.com/2026/11/25/fcc-approves-spacex-plan-to-put-ai-data-centers-in-space/"}
+  ],
+  "hashtags": ["SpaceX", "مرکز_داده", "ماهواره", "FCC", "هوش_مصنوعی"]
+}
