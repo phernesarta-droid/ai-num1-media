@@ -1,0 +1,20 @@
+{
+  "id": "2026-11-26-xpeng-humanoid-robot-ev-price",
+  "type": "photo",
+  "kind": "news",
+  "slot": "noon",
+  "story_key": "xpeng-iron-humanoid-robot-pricing",
+  "date": "2026-11-26",
+  "tag": "رباتیک",
+  "headline": "ربات انسان‌نمای Xpeng حدوداً هم‌قیمت یک خودروی برقی می‌شود",
+  "hook": "ربات انسان‌نمایی که قرار است سال آینده فروخته شود، به گفتهٔ سازنده‌اش تقریباً هم‌قیمت یک خودروی برقی خواهد بود.",
+  "summary": "برایان گو، نایب‌رئیس شرکت چینی Xpeng، گفت ربات انسان‌نمای IRON احتمالاً حدود میانهٔ قیمت فروش یک خودروی برقی قیمت‌گذاری می‌شود، اما رقم دقیقی اعلام نکرد. تولید انبوه از ژانویه آغاز می‌شود، ربات‌ها ابتدا در فروشگاه‌های خودروی شرکت به‌عنوان دستیار فروش آموزش می‌بینند و فروش از سه‌ماههٔ دوم سال آینده شروع می‌شود.",
+  "keywords": ["ربات انسان‌نما", "Xpeng", "خودروی برقی"],
+  "question": "اگر یک ربات انسان‌نما هم‌قیمت یک خودرو باشد، دوست دارید چه کاری را به آن بسپارید؟",
+  "image_prompt": "A tall faceless humanoid figure made of smooth glowing white and cyan light standing alone in a vast dark empty hall, a soft spotlight from above, minimalist conceptual metaphor for a new household robot",
+  "sources": [
+    {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-11-26/xpeng-says-its-humanoid-robot-will-cost-the-same-as-an-ev"},
+    {"name": "CNBC", "url": "https://www.cnbc.com/2026/11/26/china-ev-xpeng-humanoid-robots-household-chores.html"}
+  ],
+  "hashtags": ["ربات_انسان_نما", "Xpeng", "رباتیک", "خودروی_برقی", "هوش_مصنوعی"]
+}

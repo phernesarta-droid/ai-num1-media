@@ -491,5 +491,24 @@
     ],
     "image_mode": "ai",
     "webhook_status": 200
+  },
+  {
+    "id": "2026-11-26-xpeng-humanoid-robot-ev-price",
+    "type": "photo",
+    "kind": "news",
+    "slot": "noon",
+    "date": "2026-11-26",
+    "format": "news",
+    "story_key": "xpeng-iron-humanoid-robot-pricing",
+    "headline": "ربات انسان‌نمای Xpeng حدوداً هم‌قیمت یک خودروی برقی می‌شود",
+    "items": [],
+    "source_urls": [
+      "https://www.bloomberg.com/news/articles/2026-11-26/xpeng-says-its-humanoid-robot-will-cost-the-same-as-an-ev",
+      "https://www.cnbc.com/2026/11/26/china-ev-xpeng-humanoid-robots-household-chores.html"
+    ],
+    "posted_at": "2026-11-26T10:03:28+00:00",
+    "image_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-26-xpeng-humanoid-robot-ev-price.jpg",
+    "image_mode": "ai",
+    "webhook_status": 200
   }
 ]
