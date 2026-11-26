@@ -1,0 +1,35 @@
+{
+  "id": "2026-11-26-nothing-ear-note-ai-earbuds",
+  "type": "reel",
+  "kind": "news",
+  "slot": "evening",
+  "story_key": "nothing-ear-note-ai-notetaking-earbuds",
+  "date": "2026-11-26",
+  "tag": "گجت هوشمند",
+  "headline": "ایرباد تازهٔ Nothing جلسه‌ها را ضبط و با هوش مصنوعی خلاصه می‌کند",
+  "hook": "شرکت Nothing ایربادی می‌سازد که حرف‌های جلسه‌ات را ضبط می‌کند و هوش مصنوعی آن‌ها را برایت خلاصه می‌کند.",
+  "summary": "شرکت Nothing قرار است ۸ دسامبر Ear (note) را عرضه کند؛ یک ایرباد هوشمند که میکروفون‌های جعبهٔ شارژش گفتگوهای حضوری را ضبط می‌کنند و خود ایرباد تماس‌ها را. اپ همراه از این ضبط‌ها متن پیاده‌شده و خلاصه می‌سازد. قیمت هنوز اعلام نشده و بازار یادداشت‌برداری با هوش مصنوعی پیش‌تر رقبایی مثل Plaud دارد.",
+  "keywords": ["ایرباد هوشمند", "یادداشت‌برداری با هوش مصنوعی", "Nothing"],
+  "question": "به نظر شما ضبط خودکار جلسه‌ها با هوش مصنوعی ابزار مفیدی است یا تهدیدی برای حریم خصوصی دیگران؟",
+  "reel": {
+    "hook": "ایربادی که جلسه‌ها را خلاصه می‌کند",
+    "points": [
+      "ایرباد و جعبهٔ شارژ آن گفتگوها و تماس‌ها را ضبط می‌کنند",
+      "اپ همراه از ضبط‌ها متن پیاده‌شده و خلاصه می‌سازد",
+      "عرضه از ۸ دسامبر؛ قیمت هنوز اعلام نشده است"
+    ],
+    "image_prompts": [
+      "A pair of smooth unmarked white wireless earbuds floating above a dark calm lake at night, soft glowing sound waves rippling out from them, minimalist",
+      "Soft glowing sound waves rising from an empty round table in a dark room and flowing into one bright orb of light above it, metaphor for recording a conversation",
+      "Streams of tiny glowing particles condensing into a neat stack of smooth blank glowing tiles in dark space, metaphor for summarizing",
+      "A small closed box made of soft glowing light with a faint ribbon of light around it, floating in darkness, metaphor for an upcoming launch",
+      "A lone faceless silhouette seen from behind, surrounded by faint glowing rings of sound in a dark misty space, metaphor for privacy"
+    ]
+  },
+  "sources": [
+    {"name": "Engadget", "url": "https://www.engadget.com/2328122/nothings-ear-note-is-a-pair-of-earbuds-with-built-in-ai-notetaking/"},
+    {"name": "9to5Google", "url": "https://9to5google.com/2026/11/25/nothing-ear-note-ai-recorder-teaser/"},
+    {"name": "Android Authority", "url": "https://www.androidauthority.com/nothing-ear-note-ai-earbuds-features-3738493/"}
+  ],
+  "hashtags": ["Nothing", "ایرباد", "یادداشت_برداری", "گجت_هوش_مصنوعی", "هوش_مصنوعی"]
+}
