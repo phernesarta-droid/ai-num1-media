@@ -532,6 +532,7 @@
     "duration": 29.94,
     "voice": false,
     "music": "Dentaneosuchus Hunt",
-    "webhook_status": 200
+    "webhook_status": 200,
+    "video_removed_at": "2026-11-26T17:06:49+00:00"
   }
 ]
