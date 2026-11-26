@@ -510,5 +510,28 @@
     "image_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-26-xpeng-humanoid-robot-ev-price.jpg",
     "image_mode": "ai",
     "webhook_status": 200
+  },
+  {
+    "id": "2026-11-26-nothing-ear-note-ai-earbuds",
+    "type": "reel",
+    "kind": "news",
+    "slot": "evening",
+    "date": "2026-11-26",
+    "format": "news",
+    "story_key": "nothing-ear-note-ai-notetaking-earbuds",
+    "headline": "ایرباد تازهٔ Nothing جلسه‌ها را ضبط و با هوش مصنوعی خلاصه می‌کند",
+    "items": [],
+    "source_urls": [
+      "https://www.engadget.com/2328122/nothings-ear-note-is-a-pair-of-earbuds-with-built-in-ai-notetaking/",
+      "https://9to5google.com/2026/11/25/nothing-ear-note-ai-recorder-teaser/",
+      "https://www.androidauthority.com/nothing-ear-note-ai-earbuds-features-3738493/"
+    ],
+    "posted_at": "2026-11-26T16:51:48+00:00",
+    "video_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-26-nothing-ear-note-ai-earbuds.mp4",
+    "video_path": "posts/2026/11/2026-11-26-nothing-ear-note-ai-earbuds.mp4",
+    "duration": 29.94,
+    "voice": false,
+    "music": "Dentaneosuchus Hunt",
+    "webhook_status": 200
   }
 ]
