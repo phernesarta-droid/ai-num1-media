@@ -464,5 +464,32 @@
     "music": "Decisions",
     "webhook_status": 200,
     "video_removed_at": "2026-11-25T17:06:47+00:00"
+  },
+  {
+    "id": "2026-11-26-fcc-spacex-orbital-data-centers",
+    "type": "carousel",
+    "kind": "news",
+    "slot": "morning",
+    "date": "2026-11-26",
+    "format": "news",
+    "story_key": "fcc-approves-spacex-orbital-data-centers",
+    "headline": "مجوز آمریکا به SpaceX برای یک میلیون ماهوارهٔ مرکز داده در مدار",
+    "items": [],
+    "source_urls": [
+      "https://docs.fcc.gov/public/attachments/DOC-427572A1.txt",
+      "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
+      "https://techcrunch.com/2026/11/25/fcc-approves-spacex-plan-to-put-ai-data-centers-in-space/"
+    ],
+    "posted_at": "2026-11-26T05:47:57+00:00",
+    "image_urls": [
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-26-fcc-spacex-orbital-data-centers-01.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-26-fcc-spacex-orbital-data-centers-02.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-26-fcc-spacex-orbital-data-centers-03.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-26-fcc-spacex-orbital-data-centers-04.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-26-fcc-spacex-orbital-data-centers-05.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-26-fcc-spacex-orbital-data-centers-06.jpg"
+    ],
+    "image_mode": "ai",
+    "webhook_status": 200
   }
 ]
