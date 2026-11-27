@@ -560,5 +560,26 @@
     ],
     "image_mode": "ai",
     "webhook_status": 200
+  },
+  {
+    "id": "2026-11-27-tool-napkin-ai",
+    "type": "photo",
+    "kind": "tool",
+    "slot": "noon",
+    "date": "2026-11-27",
+    "format": "tool",
+    "story_key": "tool-napkin-ai",
+    "headline": "با Napkin AI متن خود را به نمودار، نقشهٔ ذهنی و اینفوگرافیک تبدیل کنید",
+    "items": [
+      "Napkin AI"
+    ],
+    "source_urls": [
+      "https://www.napkin.ai/",
+      "https://help.napkin.ai/en/articles/15955724-credits-plans"
+    ],
+    "posted_at": "2026-11-27T09:47:49+00:00",
+    "image_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-27-tool-napkin-ai.jpg",
+    "image_mode": "ai",
+    "webhook_status": 200
   }
 ]
