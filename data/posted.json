@@ -631,6 +631,7 @@
     "duration": 29.44,
     "voice": false,
     "music": "Blue Feather",
-    "webhook_status": 200
+    "webhook_status": 200,
+    "video_removed_at": "2026-11-27T17:06:22+00:00"
   }
 ]
