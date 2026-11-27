@@ -1,0 +1,21 @@
+{
+  "id": "2026-11-27-tool-napkin-ai",
+  "type": "photo",
+  "kind": "tool",
+  "slot": "noon",
+  "story_key": "tool-napkin-ai",
+  "date": "2026-11-27",
+  "tag": "ابزار روز",
+  "headline": "با Napkin AI متن خود را به نمودار، نقشهٔ ذهنی و اینفوگرافیک تبدیل کنید",
+  "hook": "اگر برای ارائه یا پست‌تان نمودار لازم دارید، این ابزار هوش مصنوعی متن را خودش به تصویر تبدیل می‌کند.",
+  "summary": "Napkin AI متنی را که وارد می‌کنید می‌خواند و از آن فلوچارت، نقشه ذهنی، اینفوگرافیک، نمودار داده و حتی اسلاید می‌سازد. نسخهٔ رایگان با سقف استفادهٔ هفتگی کار می‌کند و خروجی PNG و PDF در همهٔ پلن‌ها بدون محدودیت است، اما خروجی PPT و SVG در نسخهٔ رایگان محدود است. نکته: متن کوتاه و ساختاریافته نتیجهٔ بهتری می‌دهد.",
+  "keywords": ["ابزار هوش مصنوعی", "اینفوگرافیک", "نقشه ذهنی"],
+  "question": "شما برای ساختن نمودار و اینفوگرافیک بیشتر از چه ابزاری استفاده می‌کنید و چه چیزی در آن آزارتان می‌دهد؟",
+  "items": ["Napkin AI"],
+  "image_prompt": "A single thin line of glowing cyan light flowing across a dark calm surface and gradually branching into an elegant tree of connected glowing shapes, minimalist conceptual metaphor for turning text into a diagram",
+  "sources": [
+    {"name": "Napkin AI", "url": "https://www.napkin.ai/"},
+    {"name": "Napkin Help Center", "url": "https://help.napkin.ai/en/articles/15955724-credits-plans"}
+  ],
+  "hashtags": ["NapkinAI", "اینفوگرافیک", "نقشه_ذهنی", "ابزار_هوش_مصنوعی", "هوش_مصنوعی"]
+}
