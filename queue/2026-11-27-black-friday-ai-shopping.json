@@ -1,0 +1,35 @@
+{
+  "id": "2026-11-27-black-friday-ai-shopping",
+  "type": "reel",
+  "kind": "news",
+  "slot": "evening",
+  "story_key": "adobe-black-friday-2026-ai-traffic",
+  "date": "2026-11-27",
+  "tag": "خرید آنلاین",
+  "headline": "پیش‌بینی Adobe: ترافیک هوش مصنوعی به فروشگاه‌های آنلاین در بلک‌فرایدی ۹۵٪ رشد می‌کند",
+  "hook": "Adobe پیش‌بینی می‌کند در بلک‌فرایدی امسال، کلیک‌هایی که از چت‌بات‌های هوش مصنوعی به فروشگاه‌های آنلاین می‌رسد تقریباً دو برابر شود.",
+  "summary": "طبق پیش‌بینی Adobe، ترافیکی که از ابزارهای هوش مصنوعی به سایت‌های فروش آنلاین آمریکا می‌رسد، در بلک‌فرایدی ۹۵ درصد و در کل فصل خرید تعطیلات ۱۳۰ درصد نسبت به سال قبل بیشتر می‌شود. اما رشد خرید با هوش مصنوعی مانع هم دارد: Amazon دسترسی ایجنت‌های خرید هوش مصنوعی به سایتش را بسته است. این ارقام پیش‌بینی خود Adobe است.",
+  "keywords": ["بلک‌فرایدی", "خرید با هوش مصنوعی", "Amazon"],
+  "question": "شما برای پیدا کردن تخفیف‌های بلک‌فرایدی بیشتر به چت‌بات هوش مصنوعی اعتماد می‌کنید یا به جستجوی خودتان؟",
+  "reel": {
+    "hook": "بلک‌فرایدی با هوش مصنوعی",
+    "points": [
+      "پیش‌بینی Adobe: ترافیک هوش مصنوعی به فروشگاه‌ها در بلک‌فرایدی ۹۵٪ بیشتر می‌شود",
+      "در کل فصل خرید تعطیلات، رشد ۱۳۰ درصدی پیش‌بینی شده است",
+      "اما Amazon راه ایجنت‌های خرید هوش مصنوعی را بسته است"
+    ],
+    "image_prompts": [
+      "A dark city street at night lined with tall empty arches of pure soft light, completely plain with no signs, streams of tiny glowing particles flowing toward them, metaphor for online shopping traffic",
+      "Countless small smooth blank glowing box shapes floating upward into a dark night sky like lanterns, minimalist, metaphor for holiday shopping",
+      "A single glowing curve of light rising steeply across a dark plain toward the sky, sparks scattering along it, metaphor for rapid growth",
+      "A tall closed gate of dark smooth metal with a soft red glow along its edges blocking a path of light, metaphor for a blocked website",
+      "A faceless silhouette seen from behind holding a softly glowing orb of light in a dark space, small plain glowing boxes floating around, metaphor for AI-assisted shopping"
+    ]
+  },
+  "sources": [
+    {"name": "Adobe", "url": "https://news.adobe.com/news/2026/09/adobe-us-holiday-shopping-season-to-hit-record"},
+    {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-09-28/ai-assisted-shopping-to-rise-130-during-holidays-adobe-says"},
+    {"name": "CNBC", "url": "https://www.cnbc.com/2026/11/27/ai-shopping-agents-retailer-blocks.html"}
+  ],
+  "hashtags": ["بلک_فرایدی", "خرید_آنلاین", "Amazon", "ایجنت_هوش_مصنوعی", "هوش_مصنوعی"]
+}
