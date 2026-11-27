@@ -581,5 +581,33 @@
     "image_url": "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-27-tool-napkin-ai.jpg",
     "image_mode": "ai",
     "webhook_status": 200
+  },
+  {
+    "id": "2026-11-27-edu-prompts-learn-fast",
+    "type": "carousel",
+    "kind": "edu",
+    "slot": "afternoon",
+    "date": "2026-11-27",
+    "format": "prompts",
+    "story_key": "edu-prompts-learn-new-topic-fast",
+    "headline": "۴ پرامپت هوش مصنوعی برای یادگیری سریع هر موضوع تازه",
+    "items": [
+      "prompt:explain-like-beginner",
+      "prompt:step-by-step-study-plan",
+      "prompt:quiz-me",
+      "prompt:feynman-check"
+    ],
+    "source_urls": [],
+    "posted_at": "2026-11-27T13:47:59+00:00",
+    "image_urls": [
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-27-edu-prompts-learn-fast-01.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-27-edu-prompts-learn-fast-02.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-27-edu-prompts-learn-fast-03.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-27-edu-prompts-learn-fast-04.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-27-edu-prompts-learn-fast-05.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-27-edu-prompts-learn-fast-06.jpg"
+    ],
+    "image_mode": "ai",
+    "webhook_status": 200
   }
 ]
