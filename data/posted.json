@@ -633,5 +633,32 @@
     "music": "Blue Feather",
     "webhook_status": 200,
     "video_removed_at": "2026-11-27T17:06:22+00:00"
+  },
+  {
+    "id": "2026-11-28-spain-aragon-data-centers-water",
+    "type": "carousel",
+    "kind": "news",
+    "slot": "morning",
+    "date": "2026-11-28",
+    "format": "news",
+    "story_key": "spain-aragon-ai-data-centers-water-protests",
+    "headline": "هجوم مراکز داده هوش مصنوعی به منطقهٔ کم‌آب آراگون اسپانیا اعتراض‌ها را بالا برده است",
+    "items": [],
+    "source_urls": [
+      "https://www.npr.org/2026/11/27/nx-s1-6054165/what-happens-when-the-ai-construction-boom-lands-in-one-of-spains-driest-regions",
+      "https://www.cnbc.com/2026/11/17/spain-data-center-decree-election.html",
+      "https://www.npr.org/2026/10/22/nx-s1-5991641/ai-data-centers-spain-environmental-impact"
+    ],
+    "posted_at": "2026-11-28T05:47:49+00:00",
+    "image_urls": [
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-28-spain-aragon-data-centers-water-01.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-28-spain-aragon-data-centers-water-02.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-28-spain-aragon-data-centers-water-03.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-28-spain-aragon-data-centers-water-04.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-28-spain-aragon-data-centers-water-05.jpg",
+      "https://phernesarta-droid.github.io/ai-num1-media/posts/2026/11/2026-11-28-spain-aragon-data-centers-water-06.jpg"
+    ],
+    "image_mode": "ai",
+    "webhook_status": 200
   }
 ]
